@@ -337,3 +337,23 @@ details[open] > summary::after { content: "–"; }
 .compte-xarxa { font-weight: 400; color: inherit; opacity: .8; }
 .peu-xarxa { display: inline-flex; align-items: center; gap: .5rem; }
 .peu-xarxa .ic { width: 1.15rem; height: 1.15rem; }
+
+/* Targetes de contacte per servei */
+.serveis { list-style: none; padding: 0; margin: 1.5rem 0 2rem; display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
+.servei { display: flex; flex-direction: column; background: var(--superficie); border: 1px solid var(--linia); border-top: var(--franja, 6px) solid var(--c, var(--c-contacte)); border-radius: var(--radi); padding: 1.25rem 1.35rem 1.35rem; line-height: 1.45; }
+[data-proposta="contrast"] .servei { border: 2px solid #000; border-top-width: 6px; }
+.servei h2 { margin: 0 0 .2rem; font-size: 1.35rem; }
+.servei-dept { margin: 0 0 1rem; color: var(--tinta-suau); font-size: .95rem; }
+.servei-linia { display: flex; gap: .65rem; align-items: flex-start; margin: 0 0 .6rem; }
+.servei-linia .ic { flex: none; width: 1.25rem; height: 1.25rem; margin-top: .12rem; color: var(--tinta-suau); }
+.servei-linia p { margin: 0; }
+.servei-linia a { overflow-wrap: anywhere; }
+.servei-nota { color: var(--tinta-suau); font-size: .92rem; }
+.servei-acc { margin: auto 0 0; padding-top: 1rem; }
+.boto { display: inline-flex; align-items: center; min-height: 44px; padding: .55rem 1.1rem; border: 2px solid var(--tinta); border-radius: var(--radi); color: var(--tinta); background: var(--fons); font-weight: 700; text-decoration: none; }
+.boto:hover, .boto:focus-visible { background: var(--tinta); color: var(--fons); }
+@media (max-width: 480px) {
+  .servei { padding: 1rem .9rem 1.1rem; }
+  .servei-linia { gap: .5rem; }
+  .servei-linia a[href^="mailto"] { font-size: .94rem; }
+}

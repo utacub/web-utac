@@ -13,8 +13,8 @@
       <li aria-current="page">{{ node.titol }}</li>
     </ol>
   </nav>
-  <div class="pagina-graella{% if section.fills %} amb-lateral{% endif %}">
-    {% if section.fills %}
+  <div class="pagina-graella{% if section.fills and not page.sense_lateral %} amb-lateral{% endif %}">
+    {% if section.fills and not page.sense_lateral %}
     <nav class="lateral" aria-label="{{ section.titol }}">
       <p class="lateral-titol"><a href="{{ link(section.url) }}"{% if current == section.url %} aria-current="page"{% endif %}>{{ B.icon(section.icona) }}{{ section.titol }}</a></p>
       <ul>

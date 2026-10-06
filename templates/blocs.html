@@ -86,6 +86,20 @@
 {% elif b.tipus == 'nota' %}
 <div class="nota"><img src="{{ asset('img/' ~ b.imatge) }}" alt="{{ b.alt }}" width="40" height="40"><div>{{ md(b.text)|safe }}</div></div>
 
+{% elif b.tipus == 'serveis' %}
+<ul class="serveis" role="list">
+  {% for s in b.serveis %}
+  <li class="servei">
+    <h2>{{ s.nom }}</h2>
+    <p class="servei-dept">{{ s.departament }}</p>
+    <div class="servei-linia">{{ icon('ubicacio') }}<div>{{ md(s.adreca)|safe }}</div></div>
+    {% for t in s.telefons %}<p class="servei-linia">{{ icon('telefon') }}<span><a href="tel:+34{{ t.tel }}">{{ t.text }}</a>{% if t.nota %} <span class="servei-nota">({{ t.nota }})</span>{% endif %}</span></p>{% endfor %}
+    <p class="servei-linia">{{ icon('correu') }}<a href="mailto:{{ s.correu }}">{{ s.correu }}</a></p>
+    <p class="servei-acc"><a class="boto" href="{{ link(s.url) }}">Com arribar-hi i mapa<span class="vh"> de {{ s.nom }}</span></a></p>
+  </li>
+  {% endfor %}
+</ul>
+
 {% elif b.tipus == 'mapa' %}
 <div class="mapa-bloc">
   {% if PREVIEW %}<div class="mapa mapa-prova"><p><strong>Aquí es mostrarà el mapa interactiu de Google Maps.</strong><br>La versió de prova no permet incrustar-lo; al web publicat es veurà en directe.</p></div>
