@@ -13,7 +13,7 @@ blocs:
   alt: WhatsApp
   text: 'També podeu contactar amb UTAC Educació a través de WhatsApp: 638767515'
 - tipus: mapa
-  url: https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2990.0!2d2.142742!3d41.437917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDI2JzE2LjUiTiAywrAwOCczMy45IkU!5e0!3m2!1sca!2ses
+  url: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1495.6!2d2.14146!3d41.436953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a497e1128e5d33%3A0x8dbcca23c2291502!2sUTAC%20Educaci%C3%B3!5e0!3m2!1sca!2ses!4v1783595872088!5m2!1sca!2ses
   titol: Mapa de situació de la UTAC Educació
-  enllac: https://www.google.com/maps?q=41.437917,2.142742
+  enllac: https://maps.app.goo.gl/pfiU72nKdzbXB73p9
 ---
