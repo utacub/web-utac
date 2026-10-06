@@ -15,10 +15,10 @@ qui_som:
 enllacos:
 - titol: Més informació del servei
   url: /inici/informacio
-- titol: Dades de contacte i localització
-  url: /contacte-1
 - titol: Protocol demanda UTAC-Educació
   url: /inici/protocol-utac-ensenyament
+- titol: Formulari Sírius
+  url: /contacte-1/contacte-utac-sirius
 xarxa:
   text: 'Segueix-nos també a les xarxes socials:'
 ---
