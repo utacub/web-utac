@@ -1,0 +1,96 @@
+{%- macro icon(name, cls='ic') -%}
+<svg class="{{ cls }}" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{{ ICONS[name]|safe }}</svg>
+{%- endmacro -%}
+
+{%- macro fitxers(items, nivell=0) -%}
+{% if items and items|selectattr('miniatura')|list|length == items|length %}
+<ul class="previes" role="list">
+  {% for f in items %}
+  <li><a class="previa" href="{{ f.url }}">
+    <span class="previa-img"><img src="{{ asset('img/' ~ f.miniatura) }}" alt="" loading="lazy"><span class="tipus">{{ file_kind(f.nom) }}</span></span>
+    <span class="previa-peu">{{ icon('descarrega') }}<span class="previa-nom">{{ f.nom.rsplit('.', 1)[0] if '.' in f.nom else f.nom }}<span class="vh"> ({{ file_kind(f.nom) }})</span></span></span>
+  </a></li>
+  {% endfor %}
+</ul>
+{% else %}
+<ul class="fitxers{% if nivell %} niu{% endif %}">
+  {% for f in items %}
+  {% if f.carpeta %}
+  <li class="fitxer-carpeta">
+    <details{% if nivell == 0 and items|length < 4 %} open{% endif %}>
+      <summary>{{ icon('carpeta') }}<span>{{ f.nom }}</span><span class="compte">{{ f.carpeta|length }} fitxers</span></summary>
+      {{ fitxers(f.carpeta, nivell + 1) }}
+    </details>
+  </li>
+  {% else %}
+  <li><a class="fitxer" href="{{ f.url }}">{{ icon('fitxer') }}<span class="fitxer-nom">{{ f.nom }}</span><span class="tipus">{{ file_kind(f.nom) }}</span></a></li>
+  {% endif %}
+  {% endfor %}
+</ul>
+{% endif %}
+{%- endmacro -%}
+
+{%- macro bloc(b) -%}
+{% if b.tipus == 'text' %}
+<div class="text">{{ md(b.text)|safe }}</div>
+
+{% elif b.tipus == 'imatge' %}
+<figure class="figura">
+  {% if b.enllac %}<a href="{{ link(b.enllac) }}">{% endif %}
+  <img src="{{ asset('img/' ~ b.imatge) }}" alt="{{ b.alt }}" loading="lazy">
+  {% if b.enllac %}</a>{% endif %}
+</figure>
+
+{% elif b.tipus == 'fitxes' %}
+<ul class="fitxes" role="list">
+  {% for f in b.fitxes %}
+  <li class="fitxa">
+    <div class="fitxa-img">{% if f.enllac %}<a href="{{ f.enllac }}" tabindex="-1">{% endif %}<img src="{{ asset('img/' ~ f.imatge) }}" alt="{{ f.alt }}" loading="lazy">{% if f.enllac %}</a>{% endif %}</div>
+    <div class="fitxa-text">{{ md(f.text)|safe }}</div>
+  </li>
+  {% endfor %}
+</ul>
+
+{% elif b.tipus == 'videos' %}
+<ul class="videos" role="list">
+  {% for v in b.videos %}
+  <li class="video">
+    <div class="video-marc" data-youtube="{{ v.youtube }}">
+      <a class="video-inici" href="https://www.youtube.com/watch?v={{ v.youtube }}">
+        {% if not PREVIEW %}<img src="https://i.ytimg.com/vi/{{ v.youtube }}/hqdefault.jpg" alt="" loading="lazy">{% else %}<span class="video-prova">Vídeo de YouTube</span>{% endif %}
+        <span class="video-boto">{{ icon('play') }}<span class="vh">Reprodueix el vídeo{% if v.text %}: {{ v.text|striptags|truncate(80) }}{% endif %}</span></span>
+      </a>
+    </div>
+    {% if v.text %}<div class="video-text">{{ md(v.text)|safe }}</div>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+{% elif b.tipus == 'descarregues' %}
+<div class="descarregues">
+  {{ fitxers(b.fitxers) }}
+  {% if b.carpeta_drive %}<p class="carpeta-drive"><a href="{{ b.carpeta_drive }}">Obre la carpeta completa a Google Drive</a></p>{% endif %}
+</div>
+
+{% elif b.tipus == 'persones' %}
+{% if b.titol %}<h2 class="persones-titol">{{ b.titol }}</h2>{% endif %}
+<ul class="persones" role="list">
+  {% for p in b.persones %}
+  <li class="persona">
+    <h3>{{ p.nom }}</h3>
+    <div>{{ md(p.text|replace('*', ''))|safe }}</div>
+  </li>
+  {% endfor %}
+</ul>
+
+{% elif b.tipus == 'nota' %}
+<div class="nota"><img src="{{ asset('img/' ~ b.imatge) }}" alt="{{ b.alt }}" width="40" height="40"><div>{{ md(b.text)|safe }}</div></div>
+
+{% elif b.tipus == 'mapa' %}
+<div class="mapa-bloc">
+  {% if PREVIEW %}<div class="mapa mapa-prova"><p><strong>Aquí es mostrarà el mapa interactiu de Google Maps.</strong><br>La versió de prova no permet incrustar-lo; al web publicat es veurà en directe.</p></div>
+  {% else %}<div class="mapa"><iframe src="{{ b.url }}" title="{{ b.titol }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>{% endif %}
+  {% if b.enllac %}<p class="mapa-enllac"><a href="{{ b.enllac }}">Obre la ubicació a Google Maps</a></p>{% endif %}
+</div>
+{% endif %}
+{%- endmacro -%}

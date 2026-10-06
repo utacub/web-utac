@@ -1,0 +1,105 @@
+menu:
+- titol: Inici
+  url: /inici
+  icona: casa
+  fills:
+  - titol: Informació del servei
+    url: /inici/informacio
+  - titol: Protocol de demanda de servei de la UTAC-Educació
+    url: /inici/protocol-utac-ensenyament
+- titol: Contacte
+  url: /contacte-1
+  icona: contacte
+  fills:
+  - titol: UTAC Educació
+    url: /contacte-1/contacte-utac-ensenyament
+  - titol: UTAC Sírius
+    url: /contacte-1/contacte-utac-sirius
+- titol: Descàrregues
+  url: /descarregues
+  icona: descarrega
+  fills:
+  - titol: CACE-UTAC
+    url: /descarregues/cace-utac
+  - titol: Exemples de llibres de comunicació per adults amb afàsia
+    url: /descarregues/llibrets-de-comunicacio-per-afasia
+  - titol: Plafons alfabètics
+    url: /descarregues/plafons-alfabetics
+  - titol: Plafons monogràfics d'activitats
+    url: /descarregues/plafons-monografics
+- titol: Equip
+  url: /equip
+  icona: persones
+- titol: Multimèdia
+  url: /multimedia
+  icona: video
+  fills:
+  - titol: Didàctics
+    url: /multimedia/didactics
+    fills:
+    - titol: Les primeres etapes
+      url: /multimedia/didactics/videos
+    - titol: L'ús de sistemes de signes i ajuts tècnics
+      url: /multimedia/didactics/lús-de-sistemes-de-signes-i-ajuts-tècnics
+    - titol: Habilitats de conversa
+      url: /multimedia/didactics/habilitats-de-conversa
+    - titol: Normalització i independència
+      url: /multimedia/didactics/normalització-i-independència
+    - titol: Estratègies inicials
+      url: /multimedia/didactics/estrategies-inicials
+  - titol: Exemples d'ús de productes de suport
+    url: /multimedia/exemples-us-productes-suport
+  - titol: Tutorials
+    url: /multimedia/tutorials
+    fills:
+    - titol: Llibres electrònics
+      url: /multimedia/tutorials/llibres-electronics
+    - titol: Opcions d'accessibilitat Vista
+      url: /multimedia/tutorials/opcions-d-accessibilitat-vista
+    - titol: Opcions d'accessibilitat XP
+      url: /multimedia/tutorials/opcions-d-accessibilitat
+    - titol: Personalització de Word
+      url: /multimedia/tutorials/personalitzacio-de-word
+    - titol: Ratolí Vista
+      url: /multimedia/tutorials/windows-vista-opcions-de-ratoli
+    - titol: Ratolí XP
+      url: /multimedia/tutorials/ratoli
+- titol: Apps de comunicació augmentativa i alternativa
+  url: /apps-per-a-la-comunicacio
+  icona: tauleta
+  fills:
+  - titol: iOS (iPod, iPhone i/o iPad)
+    url: /apps-per-a-la-comunicacio/ios
+  - titol: Android
+    url: /apps-per-a-la-comunicacio/android
+- titol: Productes de suport
+  url: /productes-suport
+  icona: commutador
+  fills:
+  - titol: Ratolins
+    url: /productes-suport/ratolins-i-emuladors-de-ratolí
+  - titol: Teclats
+    url: /productes-suport/teclats
+  - titol: Commutadors
+    url: /productes-suport/commutadors
+  - titol: Comunicadors electrònics
+    url: /productes-suport/comunicadors
+  - titol: Control d'entorn
+    url: /productes-suport/control-d-entorn
+  - titol: Joguines de piles
+    url: /productes-suport/joguines
+  - titol: Muntatges i suports
+    url: /productes-suport/muntatges-i-suports
+  - titol: Plafons i llibres de comunicació
+    url: /productes-suport/plafons
+- titol: Recursos d'Internet
+  url: /recursos-d-internet
+  icona: web
+  fills:
+  - titol: Vídeos d'interès
+    url: /recursos-d-internet/videos-d-interes
+  - titol: Webs d'interès
+    url: /recursos-d-internet/webs-d-interes
+- titol: Bibliografia
+  url: /bibliografia
+  icona: llibre

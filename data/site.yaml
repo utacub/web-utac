@@ -1,0 +1,21 @@
+nom: Unitat de Tècniques Augmentatives de Comunicació (UTAC)
+nom_curt: UTAC
+logo: inici-01.webp
+peu: Unitat de Tècniques Augmentatives de Comunicació (UTAC)
+correus:
+- utac@ub.edu
+- utac.sirius.dretssocials@gencat.cat
+xarxes:
+- nom: Instagram
+  compte: '@utac_ub'
+  url: https://www.instagram.com/utac_ub/
+  icona: instagram
+- nom: X
+  compte: '@UTAC_UB'
+  url: https://x.com/UTAC_UB
+  icona: x
+accessos_rapids:
+- titol: Contacte
+  url: /contacte-1
+- titol: Descàrregues
+  url: /descarregues

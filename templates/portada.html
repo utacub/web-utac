@@ -1,0 +1,37 @@
+{%- import "blocs.html" as B with context -%}
+<section class="portada-cap">
+  <div class="portada-dins">
+    <h1>{{ page.titol }}</h1>
+    <div class="qui-som">
+      <h2>{{ page.qui_som.titol }}</h2>
+      {{ md(page.qui_som.text)|safe }}
+    </div>
+    <ul class="destacats" role="list">
+      {% for e in page.enllacos %}<li><a href="{{ link(e.url) }}">{{ e.titol }}</a></li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<aside class="avis" aria-label="Canal de Telegram">
+  <img src="{{ asset('img/' ~ page.avis.imatge) }}" alt="{{ page.avis.alt }}" width="56" height="56">
+  <div>{{ md(page.avis.text)|safe }}</div>
+</aside>
+
+<section class="portada-plafo" aria-labelledby="t-seccions">
+  <h2 id="t-seccions">Què hi trobareu</h2>
+  <ul class="plafo plafo-gran">
+    {% for s in MENU %}{% if s.url != '/inici' %}
+    <li class="cel cel-{{ s.icona }}">
+      <a class="cel-cap" href="{{ link(s.url) }}">{{ B.icon(s.icona) }}<span>{{ s.titol }}</span></a>
+      {% if s.fills %}<p class="cel-fills">{% for f in s.fills %}{{ f.titol }}{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
+    </li>
+    {% endif %}{% endfor %}
+  </ul>
+</section>
+
+<div class="xarxa">
+  <p>{{ page.xarxa.text }}</p>
+  <ul class="xarxes" role="list">
+    {% for x in SITE.xarxes %}<li><a href="{{ x.url }}">{{ B.icon(x.icona) }}<span>{{ x.nom }} <span class="compte-xarxa">{{ x.compte }}</span></span></a></li>{% endfor %}
+  </ul>
+</div>

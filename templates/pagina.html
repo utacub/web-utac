@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% import "blocs.html" as B with context %}
+{% block title %}{% if page.plantilla == 'portada' %}{{ page.titol }}{% else %}{{ page.titol }} · UTAC{% endif %}{% endblock %}
+{% block main %}
+{% if page.plantilla == 'portada' %}
+  {% include "portada.html" %}
+{% else %}
+<div class="pagina cel-{{ section.icona or 'casa' }}">
+  <nav class="molles" aria-label="Sou aquí">
+    <ol>
+      <li><a href="{{ link('/inici') }}">Inici</a></li>
+      {% for p in parents %}{% if p.url != '/inici' %}<li><a href="{{ link(p.url) }}">{{ p.titol }}</a></li>{% endif %}{% endfor %}
+      <li aria-current="page">{{ node.titol }}</li>
+    </ol>
+  </nav>
+  <div class="pagina-graella{% if section.fills %} amb-lateral{% endif %}">
+    {% if section.fills %}
+    <nav class="lateral" aria-label="{{ section.titol }}">
+      <p class="lateral-titol"><a href="{{ link(section.url) }}"{% if current == section.url %} aria-current="page"{% endif %}>{{ B.icon(section.icona) }}{{ section.titol }}</a></p>
+      <ul>
+        {% for f in section.fills %}
+        <li><a href="{{ link(f.url) }}"{% if current == f.url %} aria-current="page"{% endif %}>{{ f.titol }}</a>
+          {% if f.fills %}<ul>{% for g in f.fills %}<li><a href="{{ link(g.url) }}"{% if current == g.url %} aria-current="page"{% endif %}>{{ g.titol }}</a></li>{% endfor %}</ul>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+    {% endif %}
+    <article class="cos">
+      <h1>{{ page.titol }}</h1>
+      {% for b in page.blocs %}{{ B.bloc(b) }}{% endfor %}
+    </article>
+  </div>
+</div>
+{% endif %}
+{% endblock %}
