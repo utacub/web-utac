@@ -25,10 +25,9 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Genera el web
         env:
-          # Mentre el web és a utacub.github.io/web-utac cal el prefix /web-utac.
-          # Quan www.utac.cat apunti a GitHub: SITE_BASE: '' i CUSTOM_DOMAIN: www.utac.cat
-          SITE_BASE: /web-utac
-          CUSTOM_DOMAIN: ''
+          # El web es publica a l'arrel de www.utac.cat (DNS de cdmon apuntant a GitHub).
+          SITE_BASE: ''
+          CUSTOM_DOMAIN: www.utac.cat
         run: python build.py
       - uses: actions/upload-pages-artifact@v3
         with:
