@@ -3,7 +3,7 @@ titol: UTAC Educació
 ordre: 5
 blocs:
 - tipus: text
-  text: "### Departament d'Educació i Formació Professional de la Generalitat de Catalunya\n\nFacultat de Psicologia de la Universitat de Barcelona  \nCampus Mundet  \nPasseig de la Vall d'Hebron, 171  \nPalau de les Heures, planta baixa  \n08035 Barcelona\n\nTelèfon:   638767515  \nCorreu electrònic: [utac@ub.edu](mailto:utac@ub.edu)"
+  text: "### Departament d'Educació i Formació Professional de la Generalitat de Catalunya\n\nFacultat de Psicologia de la Universitat de Barcelona  \nCampus Mundet  \nPasseig de la Vall d'Hebron, 171  \nPalau de les Heures, planta baixa  \n08035 Barcelona\n\n[**Protocol de demanda de servei de la UTAC-Educació**](/inici/protocol-utac-ensenyament)\n\nTelèfon:   638767515  \nCorreu electrònic: [utac@ub.edu](mailto:utac@ub.edu)"
 - tipus: imatge
   imatge: contacte-1--contacte-utac-ensenyament-01.webp
   alt: Plànol del Campus Mundet amb la ubicació de la UTAC marcada
