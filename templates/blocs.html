@@ -6,8 +6,8 @@
 {% if items and items|selectattr('miniatura')|list|length == items|length %}
 <ul class="previes" role="list">
   {% for f in items %}
-  <li><a class="previa" href="{{ f.url }}">
-    <span class="previa-img"><img src="{{ asset('img/' ~ f.miniatura) }}" alt="" loading="lazy"><span class="tipus">{{ file_kind(f.nom) }}</span></span>
+  <li><a class="previa" href="{{ link(f.url) }}">
+    <span class="previa-img"><img src="{{ img(f.miniatura) }}" alt="" loading="lazy"><span class="tipus">{{ file_kind(f.nom) }}</span></span>
     <span class="previa-peu">{{ icon('descarrega') }}<span class="previa-nom">{{ f.nom.rsplit('.', 1)[0] if '.' in f.nom else f.nom }}<span class="vh"> ({{ file_kind(f.nom) }})</span></span></span>
   </a></li>
   {% endfor %}
@@ -23,7 +23,7 @@
     </details>
   </li>
   {% else %}
-  <li><a class="fitxer" href="{{ f.url }}">{{ icon('fitxer') }}<span class="fitxer-nom">{{ f.nom }}</span><span class="tipus">{{ file_kind(f.nom) }}</span></a></li>
+  <li><a class="fitxer" href="{{ link(f.url) }}">{{ icon('fitxer') }}<span class="fitxer-nom">{{ f.nom }}</span><span class="tipus">{{ file_kind(f.nom) }}</span></a></li>
   {% endif %}
   {% endfor %}
 </ul>
@@ -37,7 +37,7 @@
 {% elif b.tipus == 'imatge' %}
 <figure class="figura">
   {% if b.enllac %}<a href="{{ link(b.enllac) }}">{% endif %}
-  <img src="{{ asset('img/' ~ b.imatge) }}" alt="{{ b.alt }}" loading="lazy">
+  <img src="{{ img(b.imatge) }}" alt="{{ b.alt }}" loading="lazy">
   {% if b.enllac %}</a>{% endif %}
 </figure>
 
@@ -45,7 +45,7 @@
 <ul class="fitxes" role="list">
   {% for f in b.fitxes %}
   <li class="fitxa">
-    <div class="fitxa-img">{% if f.enllac %}<a href="{{ f.enllac }}" tabindex="-1">{% endif %}<img src="{{ asset('img/' ~ f.imatge) }}" alt="{{ f.alt }}" loading="lazy">{% if f.enllac %}</a>{% endif %}</div>
+    <div class="fitxa-img">{% if f.enllac %}<a href="{{ link(f.enllac) }}" tabindex="-1">{% endif %}<img src="{{ img(f.imatge) }}" alt="{{ f.alt }}" loading="lazy">{% if f.enllac %}</a>{% endif %}</div>
     <div class="fitxa-text">{{ md(f.text)|safe }}</div>
   </li>
   {% endfor %}
@@ -84,7 +84,7 @@
 </ul>
 
 {% elif b.tipus == 'nota' %}
-<div class="nota"><img src="{{ asset('img/' ~ b.imatge) }}" alt="{{ b.alt }}" width="40" height="40"><div>{{ md(b.text)|safe }}</div></div>
+<div class="nota"><img src="{{ img(b.imatge) }}" alt="{{ b.alt }}" width="40" height="40"><div>{{ md(b.text)|safe }}</div></div>
 
 {% elif b.tipus == 'serveis' %}
 <ul class="persones serveis" role="list">

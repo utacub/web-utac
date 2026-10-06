@@ -70,6 +70,9 @@ def make_linker(current_url):
             return url
         if url.startswith(('http://', 'https://', 'mailto:', 'tel:', '#')):
             return url
+        if url.startswith('/assets/'):
+            # fitxer pujat des del panell d'edició
+            return os.path.relpath(url[1:], cur_dir or '.') if PREVIEW else BASE + url
         if url.startswith('/'):
             path, _, frag = url.partition("#")
             path = unquote(path)
@@ -86,7 +89,16 @@ def make_linker(current_url):
             return os.path.relpath('assets/' + name, cur_dir or '.')
         return BASE + '/assets/' + name
 
-    return link, asset
+    def img(name):
+        """Imatge de assets/img; accepta 'foto.webp' o '/assets/img/foto.webp' (format del panell)."""
+        n = (name or '').strip()
+        for pre in ('/assets/img/', 'assets/img/', '/'):
+            if n.startswith(pre):
+                n = n[len(pre):]
+                break
+        return asset('img/' + n)
+
+    return link, asset, img
 
 
 MD = markdown.Markdown(extensions=['extra', 'sane_lists'])
@@ -94,7 +106,10 @@ MD = markdown.Markdown(extensions=['extra', 'sane_lists'])
 
 def render_md(text, link):
     MD.reset()
-    h = MD.convert(text or '')
+    t = text or ''
+    # salts de línia que escriu l'editor del panell ('\\' o <br> al final de línia)
+    t = re.sub(r'\\\n', '  \n', t)
+    h = MD.convert(t)
     h = re.sub(r'href="([^"]+)"', lambda m: 'href="%s"' % html.escape(link(html.unescape(m.group(1))), quote=True), h)
     return h
 
@@ -117,10 +132,10 @@ def build():
     shutil.copytree(os.path.join(ROOT, 'assets'), os.path.join(OUT, 'assets'))
     tpl = env.get_template('pagina.html')
     for url, page in PAGES.items():
-        link, asset = make_linker(url)
+        link, asset, img = make_linker(url)
         node, parents = MENU_INDEX.get(url, ({'titol': page['titol'], 'url': url}, ()))
         section = parents[0] if parents else node
-        ctx = dict(page=page, link=link, asset=asset, md=lambda t, link=link: render_md(t, link),
+        ctx = dict(page=page, link=link, asset=asset, img=img, md=lambda t, link=link: render_md(t, link),
                    node=node, parents=parents, section=section, current=url)
         html_out = tpl.render(**ctx)
         dest = os.path.join(OUT, out_rel(url))
@@ -129,9 +144,9 @@ def build():
         if url == '/inici' and not PREVIEW:
             open(os.path.join(OUT, 'index.html'), 'w', encoding='utf-8').write(html_out)
     if not PREVIEW:
-      link, asset = make_linker('/404')
+      link, asset, img = make_linker('/404')
       open(os.path.join(OUT, '404.html'), 'w', encoding='utf-8').write(
-        env.get_template('404.html').render(link=link, asset=asset, current='/404'))
+        env.get_template('404.html').render(link=link, asset=asset, img=img, current='/404'))
     if not PREVIEW:
         if DOMINI:
             open(os.path.join(OUT, 'CNAME'), 'w').write(DOMINI + '\n')

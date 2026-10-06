@@ -11,3 +11,7 @@ Codi i contingut del web de la Unitat de Tècniques Augmentatives de Comunicaci�
 Cada canvi desat a la branca `main` es publica automàticament (GitHub Actions → GitHub Pages) en un o dos minuts.
 
 Prova local: `pip install -r requirements.txt` i després `python build.py` (o `python build.py --preview`).
+
+## Panell d'edició
+
+El contingut es pot editar sense tocar codi des de **https://app.pagescms.org**, entrant amb el compte de GitHub i triant el repositori `web-utac`. La configuració del panell és al fitxer `.pages.yml`. Cada canvi desat es publica automàticament en un o dos minuts.
