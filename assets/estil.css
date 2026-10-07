@@ -12,8 +12,8 @@
   --enllac: #1a5dab;
   --enllac-hover: #0f3f78;
   --focus: #f2c230;
-  --cap-fons: #ffffff;
-  --cap-tinta: #1d2b3a;
+  --cap-fons: #1d2b3a;
+  --cap-tinta: #ffffff;
   --peu-fons: #1d2b3a;
   --peu-tinta: #f3f6f9;
   --font-cos: "Atkinson Hyperlegible", system-ui, sans-serif;
@@ -130,6 +130,11 @@ p, ul, ol { margin: 0 0 1rem; }
 .marca:hover { color: inherit; }
 .marca-logo { width: 96px; height: auto; }
 [data-proposta="academic"] .marca-logo, [data-proposta="contrast"] .marca-logo { filter: invert(1); }
+/* Capçalera fosca (proposta A): logo en blanc, línia separadora i franja groga */
+[data-proposta="plafo"] .cap { border-bottom: 4px solid #f2c230; }
+[data-proposta="plafo"] .marca-logo { filter: invert(1); }
+[data-proposta="plafo"] .marca-nom { border-left: 3px solid currentColor; padding-left: .9rem; }
+[data-proposta="plafo"] .rapids a:hover, [data-proposta="plafo"] .rapids a[aria-current="page"] { border-bottom-color: #f2c230; }
 .marca-nom { font-family: var(--font-titol); font-weight: var(--pes-titol); font-size: 1.05rem; line-height: 1.25; max-width: 19ch; }
 .rapids { display: flex; gap: .25rem 1.25rem; flex-wrap: wrap; }
 .rapids a { color: inherit; text-decoration: none; font-weight: 700; padding: .35rem 0; border-bottom: 3px solid transparent; }
@@ -278,6 +283,7 @@ details[open] > summary::after { content: "–"; }
   .rapids { order: 3; width: 100%; font-size: .95rem; }
   .marca-nom { font-size: .9rem; max-width: 15ch; }
   .marca-logo { width: 72px; }
+  [data-proposta="plafo"] .marca-nom { padding-left: .6rem; }
 }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
 
