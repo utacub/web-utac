@@ -230,6 +230,10 @@ p, ul, ol { margin: 0 0 1rem; }
 .fitxa-img a { display: contents; }
 .fitxa-text { padding: .85rem 1rem 1rem; font-size: .98rem; }
 .fitxa-text p:last-child { margin-bottom: 0; }
+/* Fitxes d'icones d'aplicació: icones de la mateixa mida i requadres iguals */
+.fitxes-icones { grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); grid-auto-rows: 1fr; }
+.fitxes-icones .fitxa-img { aspect-ratio: auto; height: 128px; padding: 16px; }
+.fitxes-icones .fitxa-img img { width: 96px; height: 96px; max-height: none; object-fit: contain; }
 
 /* Vídeos */
 .videos { list-style: none; padding: 0; margin: 1rem 0 2rem; display: grid; gap: 1.5rem 2rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); }
@@ -293,6 +297,8 @@ details[open] > summary::after { content: "–"; }
   .pagina-graella .cos { order: 1; }
   .fitxes { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: .75rem; }
   .fitxa-text { padding: .6rem .7rem .75rem; font-size: .93rem; }
+  .fitxes-icones .fitxa-img { height: 104px; }
+  .fitxes-icones .fitxa-img img { width: 72px; height: 72px; }
 }
 
 .nota { display: flex; gap: .9rem; align-items: center; max-width: 72ch; margin: 1rem 0 1.5rem; padding: .8rem 1rem; background: var(--superficie); border: 1px solid var(--linia); border-radius: var(--radi); }

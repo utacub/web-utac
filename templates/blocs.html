@@ -42,7 +42,7 @@
 </figure>
 
 {% elif b.tipus == 'fitxes' %}
-<ul class="fitxes" role="list">
+<ul class="fitxes{% if b.format == 'icones' %} fitxes-icones{% endif %}" role="list">
   {% for f in b.fitxes %}
   <li class="fitxa">
     <div class="fitxa-img">{% if f.enllac %}<a href="{{ link(f.enllac) }}" tabindex="-1">{% endif %}<img src="{{ img(f.imatge) }}" alt="{{ f.alt }}" loading="lazy">{% if f.enllac %}</a>{% endif %}</div>

@@ -46,4 +46,18 @@
     aplica(inicial);
     radios.forEach(function (r) { r.addEventListener('change', function () { aplica(r.value); }); });
   }
+
+  // Fitxes d'icones: tots els requadres de la pàgina fan la mateixa alçada
+  var fitxesIcones = document.querySelectorAll('.fitxes-icones .fitxa');
+  function igualaFitxes() {
+    var max = 0;
+    fitxesIcones.forEach(function (f) { f.style.minHeight = ''; });
+    fitxesIcones.forEach(function (f) { max = Math.max(max, f.offsetHeight); });
+    fitxesIcones.forEach(function (f) { f.style.minHeight = max + 'px'; });
+  }
+  if (fitxesIcones.length) {
+    igualaFitxes();
+    window.addEventListener('resize', igualaFitxes);
+    if (document.fonts) document.fonts.ready.then(igualaFitxes);
+  }
 })();

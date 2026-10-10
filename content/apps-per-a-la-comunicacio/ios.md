@@ -5,10 +5,11 @@ blocs:
 - tipus: text
   text: '## Basades en pictogrames'
 - tipus: fitxes
+  format: icones
   fitxes:
   - imatge: apps-per-a-la-comunicacio--ios-01.webp
-    alt: Icona de l'aplicació Asterics Grid
-    text: '[Asterics Grid](https://grid.asterics.eu/)'
+    alt: Icona de l'aplicació Asterics AAC
+    text: '[Asterics AAC](https://grid.asterics.eu/)'
   - imatge: apps-per-a-la-comunicacio--ios-02.webp
     alt: Icona de l'aplicació TD Snap
     text: '[TD Snap](https://apps.apple.com/bo/app/td-snap/id1257753762): comercial, amb veu sintetitzada catalana. Versió gratuïta sense veus.'
@@ -22,6 +23,7 @@ blocs:
 - tipus: text
   text: '## Basades en l''escriptura'
 - tipus: fitxes
+  format: icones
   fitxes:
   - imatge: apps-per-a-la-comunicacio--ios-05.webp
     alt: Icona de l'aplicació Asistente de voz CAA

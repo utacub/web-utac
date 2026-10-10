@@ -82,6 +82,14 @@ content:
           - name: fitxes
             label: Fitxes amb imatge (graella)
             fields:
+              - name: format
+                label: Format de les fitxes
+                description: «Icones d'aplicació» mostra totes les icones a la mateixa mida i tots els requadres iguals.
+                type: select
+                options:
+                  values:
+                    - { value: fotos, label: Fotografies }
+                    - { value: icones, label: Icones d'aplicació }
               - name: fitxes
                 label: Fitxes
                 type: object

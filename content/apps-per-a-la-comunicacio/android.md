@@ -5,19 +5,21 @@ blocs:
 - tipus: text
   text: '## Basades en pictogrames'
 - tipus: fitxes
+  format: icones
   fitxes:
   - imatge: apps-per-a-la-comunicacio--android-01.webp
-    alt: Icona de l'aplicació AsTeRICS Grid
-    text: '[AsTeRICS Grid](https://grid.asterics.eu/)'
+    alt: Icona de l'aplicació Asterics AAC
+    text: '[Asterics AAC](https://grid.asterics.eu/)'
   - imatge: apps-per-a-la-comunicacio--android-02.webp
-    alt: Icona de l'aplicació Eneso Verbo
-    text: '[Eneso Verbo](https://www.eneso.es/verbo/) (requereix llicència comercial)'
+    alt: Icona de l'aplicació Verbo 2
+    text: '[Verbo 2](https://play.google.com/store/apps/details?id=es.eneso.verbo2) (requereix llicència comercial)'
   - imatge: apps-per-a-la-comunicacio--android-03.webp
     alt: Icona de l'aplicació JoComunico
     text: '[JoComunico](http://jocomunico.com/#/home): requereix connexió a internet.'
 - tipus: text
   text: '## Basades en l''escriptura'
 - tipus: fitxes
+  format: icones
   fitxes:
   - imatge: apps-per-a-la-comunicacio--android-04.webp
     alt: Icona de l'aplicació Asistente de voz AAC
@@ -31,6 +33,7 @@ blocs:
 - tipus: text
   text: '## Veus sintetitzades per Android'
 - tipus: fitxes
+  format: icones
   fitxes:
   - imatge: apps-per-a-la-comunicacio--android-07.webp
     alt: Icona de l'aplicació Acapela TTS Voices
