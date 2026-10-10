@@ -20,6 +20,9 @@ blocs:
   - imatge: apps-per-a-la-comunicacio--ios-04.webp
     alt: Icona de l'aplicació JoComunico
     text: '[JoComunico](http://jocomunico.com/#/home): requereix connexió a internet.'
+  - imatge: apps-per-a-la-comunicacio--ios-09.webp
+    alt: Icona de l'aplicació Verbo 2
+    text: '[Verbo 2](https://apps.apple.com/app/id6755775562): descàrrega gratuïta; la llicència completa és de pagament.'
 - tipus: text
   text: '## Basades en l''escriptura'
 - tipus: fitxes

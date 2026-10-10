@@ -30,18 +30,18 @@ blocs:
     - [CACE_Word_Català_7x10_161019](https://www.dropbox.com/s/xx93u8gvmb43hpl/CACE_Word_Catal%C3%A0_7x10_161019.docx?dl=0) — Versió en català del CACE per Word. 20 categories. Pàgines verticals en una graella de 7x10 amb pictogrames ARASAAC.
 
 
-    ## AsTeRICS Grid
+    ## Asterics AAC
 
 
-    - [CACE 2021 Multilingüe (català, castellà, anglès, àrab i cinès) Asterics Grid 250728](https://www.dropbox.com/scl/fi/bpnmfh3j39jl27vsknusj/CACE-2021-250728-Multilingue.grd?rlkey=o81xgjsr0r7uwdc3akgo492lr&st=uh1bsdq1&dl=0)
+    - [CACE 2021 Multilingüe (català, castellà, anglès, àrab i cinès) Asterics AAC 250728](https://www.dropbox.com/scl/fi/bpnmfh3j39jl27vsknusj/CACE-2021-250728-Multilingue.grd?rlkey=o81xgjsr0r7uwdc3akgo492lr&st=uh1bsdq1&dl=0)
 
-    - [CACE 2021 Asterics Grid 220929](https://www.dropbox.com/s/230oatrazjhhzey/CACE%202021%20Asterics%20Grid%20220929.grd?dl=0) - Versió en català del CACE 2021
+    - [CACE 2021 Asterics AAC 220929](https://www.dropbox.com/s/230oatrazjhhzey/CACE%202021%20Asterics%20Grid%20220929.grd?dl=0) - Versió en català del CACE 2021
 
-    - [CACE 2021 ST-G Asterics Grid 220930](https://www.dropbox.com/s/qobvctqxiwvytr9/CACE%202021%20ST-G%20Asterics%20Grid%20220930.grd?dl=0) - Versió en català del CACE 2021, amb disseny ST-G per donar suport a l''estructura de la frase
+    - [CACE 2021 ST-G Asterics AAC 220930](https://www.dropbox.com/s/qobvctqxiwvytr9/CACE%202021%20ST-G%20Asterics%20Grid%20220930.grd?dl=0) - Versió en català del CACE 2021, amb disseny ST-G per donar suport a l''estructura de la frase
 
-    - [CACE 2021 Asterics Grid Castellano 221010](https://www.dropbox.com/s/k90fcrla61zk7e3/ESP_CACE%202021%20Asterics%20Grid%20221010.grd?dl=0) - Versión en castellano del CACE 2021
+    - [CACE 2021 Asterics AAC Castellano 221010](https://www.dropbox.com/s/k90fcrla61zk7e3/ESP_CACE%202021%20Asterics%20Grid%20221010.grd?dl=0) - Versión en castellano del CACE 2021
 
-    - [CACE 2021 ST-G Asterics Grid Castellano 221010](https://www.dropbox.com/s/9r9wspvk0opx2by/ESP_CACE%202021%20ST-G%20Asterics%20Grid%20221010.grd?dl=0) - Versión en castellano del CACE 2021, con diseño ST-G para ofrecer apoyo a la estructura de la frase
+    - [CACE 2021 ST-G Asterics AAC Castellano 221010](https://www.dropbox.com/s/9r9wspvk0opx2by/ESP_CACE%202021%20ST-G%20Asterics%20Grid%20221010.grd?dl=0) - Versión en castellano del CACE 2021, con diseño ST-G para ofrecer apoyo a la estructura de la frase
 
 
     ## Let Me Talk
@@ -90,7 +90,7 @@ blocs:
     - [Instruccions per passar els vocabularis per TD Snap a dispositius Windows i iOS](https://www.dropbox.com/s/sl6ci34umnfo2il/INTRUCCIONS%20PER%20COPIAR%20ARXIU%20CACE%20SNAP%20CORE%20A%20LA%20APP.docx?dl=0)
 
 
-    ## Verbo
+    ## Verbo 2
 
 
     Totes aquestes versions són vàlides tant per la versió Windows com per la versió Android.
