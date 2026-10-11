@@ -18,8 +18,6 @@ blocs:
     text: Ús d'un comunicador en PC per encercament amb un commutador (captura de pantalla).
   - youtube: E9q7QpIwgT4
     text: Ús d'un comunicador en PC per accés directe amb un ratolí.
-  - youtube: gc8fHjhKqSM
-    text: 'Hermes PC utilitzat amb un teclat en pantalla fet amb Click''n''Type per accés directe.'
   - youtube: jb3Ue-E1Tzs
     text: 'Captura d''una activitat d''exemple, construïda amb The Grid, per treballar conceptes de localització. En el vídeo l''accés es realitza a través d''encercament, però també es pot utilitzar amb accés directe.'
   - youtube: s3yZ1HtlvUk

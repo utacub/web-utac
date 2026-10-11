@@ -48,7 +48,7 @@ blocs:
   - nom: FRASES CODI ULLS CATALÀ.xls
     url: https://drive.google.com/file/d/0B09QklhSdnJlQlBLbGlpaUZLa0E/view?usp=sharing&resourcekey=0-xClBjRRcF7raxrju_ET0zw
     miniatura: miniatures/frases-codi-ulls-catala.webp
-  - nom: Frasespreestorades.doc
+  - nom: Frases predefinides.doc
     url: https://drive.google.com/file/d/0B09QklhSdnJlRk4tcFdEdGtJZ1U/view?usp=sharing&resourcekey=0-Cd0QDX7e-dwlIsj3wwVZ_Q
     miniatura: miniatures/frasespreestorades.webp
   - nom: QWERTY INDICACIÓ DIRECTA GROC AMB NUMEROS.doc
