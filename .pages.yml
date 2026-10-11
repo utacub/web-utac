@@ -90,6 +90,7 @@ content:
                   values:
                     - { value: fotos, label: Fotografies }
                     - { value: icones, label: Icones d'aplicació }
+                    - { value: captures, label: Captures de pantalla (GIF o imatge apaïsada) }
               - name: fitxes
                 label: Fitxes
                 type: object
@@ -109,6 +110,10 @@ content:
                   - name: text
                     label: Text
                     component: text_ric
+                  - name: descarrega
+                    label: Fitxer per descarregar (opcional)
+                    description: Si s'omple, sota el text apareix un botó de descàrrega.
+                    type: string
 
           - name: videos
             label: Vídeos de YouTube
@@ -349,6 +354,7 @@ content:
               values:
                 - { value: casa, label: Casa }
                 - { value: contacte, label: Bafarada (contacte) }
+                - { value: joc, label: Comandament de joc }
                 - { value: descarrega, label: Descàrrega }
                 - { value: persones, label: Persones }
                 - { value: video, label: Vídeo }

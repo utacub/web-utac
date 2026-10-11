@@ -29,6 +29,12 @@ jobs:
           SITE_BASE: ''
           CUSTOM_DOMAIN: www.utac.cat
         run: python build.py
+      - name: Afegeix els jocs per descarregar
+        # Còpia de l'HTML actual de cada joc, perquè es pugui descarregar i jugar sense connexió
+        run: |
+          mkdir -p dist/assets/jocs
+          curl -fsSL https://raw.githubusercontent.com/utacub/miraijuga/main/index.html -o dist/assets/jocs/miraijuga.html
+          curl -fsSL https://raw.githubusercontent.com/utacub/miraarcade/main/index.html -o dist/assets/jocs/miraarcade.html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

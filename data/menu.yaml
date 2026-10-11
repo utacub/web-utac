@@ -72,6 +72,9 @@ menu:
     url: /apps-per-a-la-comunicacio/ios
   - titol: Android
     url: /apps-per-a-la-comunicacio/android
+- titol: Activitats creades amb IA
+  url: /activitats-creades-amb-ia
+  icona: joc
 - titol: Productes de suport
   url: /productes-suport
   icona: commutador
