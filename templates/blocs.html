@@ -45,8 +45,9 @@
 <ul class="fitxes{% if b.format in ('icones', 'captures') %} fitxes-{{ b.format }}{% endif %}" role="list">
   {% for f in b.fitxes %}
   <li class="fitxa">
-    <div class="fitxa-img">{% if f.enllac %}<a href="{{ link(f.enllac) }}" tabindex="-1">{% endif %}<img src="{{ img(f.imatge) }}" alt="{{ f.alt }}" loading="lazy">{% if f.enllac %}</a>{% endif %}</div>
-    <div class="fitxa-text">{{ md(f.text)|safe }}{% if f.descarrega %}
+    {%- set nova = b.format == 'captures' %}
+    <div class="fitxa-img">{% if f.enllac %}<a href="{{ link(f.enllac) }}" tabindex="-1"{% if nova %} target="_blank" rel="noopener"{% endif %}>{% endif %}<img src="{{ img(f.imatge) }}" alt="{{ f.alt }}" loading="lazy">{% if f.enllac %}</a>{% endif %}</div>
+    <div class="fitxa-text">{% if nova %}{{ md(f.text)|replace('<a href="http', '<a target="_blank" rel="noopener" href="http')|safe }}{% else %}{{ md(f.text)|safe }}{% endif %}{% if f.descarrega %}
       <a class="boto-descarrega" href="{{ link(f.descarrega) }}" download>{{ icon('descarrega') }}<span>Descarrega l'HTML</span></a>{% endif %}</div>
   </li>
   {% endfor %}
