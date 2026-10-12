@@ -3,7 +3,7 @@ titol: UTAC Sírius
 ordre: 6
 blocs:
 - tipus: text
-  text: "### Department of Social Rights and Inclusion, Government of Catalonia\n\nSírius Personal Autonomy Centre  \nC/ Lope de Vega, s/n (at Pg. del Taulat, 106)  \n08005 Barcelona\n\n[**Enquiry or** **support request form**](https://dretssocials.gencat.cat/ca/ambits_tematics/accessibilitat/centre-autonomia-personal-sirius/consulta-assessorament-centre-autonomia-personal-sirius/) (in Catalan)\n\nSírius phone: 934838418 (Monday to Friday, 8:00 to 15:00)  \nUTAC Sírius phone:   638767515  \n938822788  \nEmail: [utac.sirius.dretssocials@gencat.cat](mailto:utac.sirius.dretssocials@gencat.cat)"
+  text: "### Departament de Drets Socials i Inclusió de la Generalitat de Catalunya\n\nCentre d'autonomia personal Sírius  \nC/ Lope de Vega, s/n (at Pg. del Taulat, 106)  \n08005 Barcelona\n\n[**Enquiry or** **support request form**](https://dretssocials.gencat.cat/ca/ambits_tematics/accessibilitat/centre-autonomia-personal-sirius/consulta-assessorament-centre-autonomia-personal-sirius/) (in Catalan)\n\nSírius phone: 934838418 (Monday to Friday, 8:00 to 15:00)  \nUTAC Sírius phone:   638767515  \n938822788  \nEmail: [utac.sirius.dretssocials@gencat.cat](mailto:utac.sirius.dretssocials@gencat.cat)"
 - tipus: nota
   imatge: contacte-1--contacte-utac-sirius-01.webp
   alt: WhatsApp

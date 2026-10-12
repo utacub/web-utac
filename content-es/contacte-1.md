@@ -6,8 +6,8 @@ blocs:
 - tipus: serveis
   serveis:
   - nom: UTAC Educació
-    departament: Departamento de Educación y Formación Profesional
-    adreca: "Facultad de Psicología de la Universidad de Barcelona  \nCampus Mundet · Palau de les Heures, planta baja  \nPasseig de la Vall d'Hebron, 171  \n08035 Barcelona"
+    departament: Departament d'Educació i Formació Professional
+    adreca: "Facultat de Psicologia de la Universitat de Barcelona  \nCampus Mundet · Palau de les Heures, planta baja  \nPasseig de la Vall d'Hebron, 171  \n08035 Barcelona"
     telefons:
     - text: 638 767 515
       tel: '638767515'
@@ -15,8 +15,8 @@ blocs:
     correu: utac@ub.edu
     url: /contacte-1/contacte-utac-ensenyament
   - nom: UTAC Sírius
-    departament: Departamento de Derechos Sociales e Inclusión
-    adreca: "Centro de autonomía personal Sírius  \nC/ Lope de Vega, s/n (altura Pg. del Taulat, 106)  \n08005 Barcelona"
+    departament: Departament de Drets Socials i Inclusió
+    adreca: "Centre d'autonomia personal Sírius  \nC/ Lope de Vega, s/n (altura Pg. del Taulat, 106)  \n08005 Barcelona"
     telefons:
     - text: 638 767 515
       tel: '638767515'

@@ -18,7 +18,7 @@ blocs:
     Basil, C., & Rosell, C. (2006). Recursos y sistemas alternativos/aumentativos de comunicación. In J. L. Gallego (Coord.), *Enciclopedia temática de logopedia, volumen 1*. Málaga: Aljibe, 442-465.
 
 
-    Basil, C., Soro-Camats, E., & Rosell, C. (1998). *Sistemas de signos y ayudas técnicas para la comunicación y la escritura. Principios teóricos y aplicaciones.* Barcelona: Masson. (out of print, currently [available from the UB Digital Repository](http://diposit.ub.edu/dspace/handle/2445/19162))
+    Basil, C., Soro-Camats, E., & Rosell, C. (1998). *Sistemas de signos y ayudas técnicas para la comunicación y la escritura. Principios teóricos y aplicaciones.* Barcelona: Masson. (out of print, currently [available from the Dipòsit Digital de la UB](http://diposit.ub.edu/dspace/handle/2445/19162))
 
 
     Basil, C., & Soro-Camats, E. (1996). *Discapacidad motora, interacción y adquisición del lenguaje: Sistemas aumentativos y alternativos de comunicación*. (Guide and videos 1, 2, 3, 4) Madrid: MEC-CDC. (this work is out of print, but it can be found in libraries and is also available on this website in the “[multimedia](/multimedia/didactics)” section)
@@ -150,5 +150,5 @@ blocs:
     The journal ["Augmentative and Alternative Communication (AAC)"](http://www.isaac-online.org/publications), published by the [International Society for Augmentative and Alternative Communication (ISAAC)](http://www.isaac-online.org/), publishes research articles, theoretical reflections and applied practice.
 
 
-    The Social Services Documentation Centre of the Government of Catalonia (DIXIT) also produced a fact sheet on augmentative communication (in Catalan): <http://dixit.gencat.cat/ca/detalls/Article/20150113_tecniques_augmentatives_comunicacio>.'
+    The Centre de Documentació de Serveis Socials of the Generalitat de Catalunya (DIXIT) also produced a fact sheet on augmentative communication (in Catalan): <http://dixit.gencat.cat/ca/detalls/Article/20150113_tecniques_augmentatives_comunicacio>.'
 ---
