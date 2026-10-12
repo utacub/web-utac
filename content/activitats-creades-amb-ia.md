@@ -20,6 +20,6 @@ blocs:
   - imatge: activitats-ia--mirastudio.gif
     alt: 'Pantalles de Mira Studio: menú amb 15 activitats, balcó verd, escenari en directe, cabina de fotos, food truck, festival de fanalets, detectiu de museu, perruqueria i emplata com un xef'
     enllac: https://utacub.github.io/mirastudio/
-    text: '**[Mira Studio](https://utacub.github.io/mirastudio/)**: 15 activitats creatives per jugar amb la mirada, pensades per a adolescents, de descobrir a planificar.'
+    text: '**[Mira Studio](https://utacub.github.io/mirastudio/)**: 15 activitats creatives per jugar amb la mirada, de descobrir a planificar.'
     descarrega: /assets/jocs/mirastudio.html
 ---
