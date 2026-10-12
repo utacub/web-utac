@@ -4,7 +4,7 @@ ordre: 5
 sense_lateral: false
 blocs:
 - tipus: text
-  text: "### Department of Education and Vocational Training, Government of Catalonia\n\nFaculty of Psychology, University of Barcelona  \nCampus Mundet  \nPasseig de la Vall d'Hebron, 171  \nPalau de les Heures, ground floor  \n08035 Barcelona\n\n**[UTAC Educació service request protocol](/inici/protocol-utac-ensenyament)**\n\nPhone:   638767515  \nEmail: [utac@ub.edu](mailto:utac@ub.edu)"
+  text: "### Departament d'Educació i Formació Professional de la Generalitat de Catalunya\n\nFacultat de Psicologia, Universitat de Barcelona  \nCampus Mundet  \nPasseig de la Vall d'Hebron, 171  \nPalau de les Heures, ground floor  \n08035 Barcelona\n\n**[UTAC Educació service request protocol](/inici/protocol-utac-ensenyament)**\n\nPhone:   638767515  \nEmail: [utac@ub.edu](mailto:utac@ub.edu)"
 - tipus: imatge
   imatge: contacte-1--contacte-utac-ensenyament-01.webp
   alt: Map of Campus Mundet with the location of UTAC marked

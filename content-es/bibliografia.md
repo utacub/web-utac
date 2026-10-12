@@ -18,7 +18,7 @@ blocs:
     Basil, C., y Rosell, C. (2006). Recursos y sistemas alternativos/aumentativos de comunicación. En J. L. Gallego (Coord.), *Enciclopedia temática de logopedia, volumen 1*. Málaga: Aljibe, 442-465.
 
 
-    Basil, C., Soro-Camats, E., y Rosell, C. (1998). *Sistemas de signos y ayudas técnicas para la comunicación y la escritura. Principios teóricos y aplicaciones.* Barcelona: Masson. (obra agotada, actualmente [consultable en el Depósito Digital de la UB](http://diposit.ub.edu/dspace/handle/2445/19162))
+    Basil, C., Soro-Camats, E., y Rosell, C. (1998). *Sistemas de signos y ayudas técnicas para la comunicación y la escritura. Principios teóricos y aplicaciones.* Barcelona: Masson. (obra agotada, actualmente [consultable en el Dipòsit Digital de la UB](http://diposit.ub.edu/dspace/handle/2445/19162))
 
 
     Basil, C., y Soro-Camats, E. (1996). *Discapacidad motora, interacción y adquisición del lenguaje: Sistemas aumentativos y alternativos de comunicación*. (Guía y vídeos 1, 2, 3, 4) Madrid: MEC-CDC. (esta obra está agotada, pero se puede encontrar en las bibliotecas y también se encuentra en esta web en el espacio “[multimedia](/multimedia/didactics)”)
@@ -150,5 +150,5 @@ blocs:
     La revista ["Augmentative and Alternative Communication (AAC)"](http://www.isaac-online.org/publications), difundida por la [Sociedad Internacional de Comunicación Aumentativa y Alternativa (ISAAC)](http://www.isaac-online.org/), publica artículos de investigación, de reflexión teórica y de práctica aplicada.
 
 
-    El Centro de Documentación de Servicios Sociales de la Generalitat de Catalunya (DIXIT) también elaboró una ficha sobre comunicación aumentativa (en catalán): <http://dixit.gencat.cat/ca/detalls/Article/20150113_tecniques_augmentatives_comunicacio>.'
+    El Centre de Documentació de Serveis Socials de la Generalitat de Catalunya (DIXIT) también elaboró una ficha sobre comunicación aumentativa (en catalán): <http://dixit.gencat.cat/ca/detalls/Article/20150113_tecniques_augmentatives_comunicacio>.'
 ---
