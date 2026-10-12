@@ -12,18 +12,18 @@
   </div>
 </section>
 
-<aside class="avis" aria-label="Canal de Telegram">
+<aside class="avis" aria-label="{{ T.canal_telegram }}">
   <img src="{{ img(page.avis.imatge) }}" alt="{{ page.avis.alt }}" width="56" height="56">
   <div>{{ md(page.avis.text)|safe }}</div>
 </aside>
 
 <section class="portada-plafo" aria-labelledby="t-seccions">
-  <h2 id="t-seccions">Què hi trobareu</h2>
+  <h2 id="t-seccions">{{ T.que_hi_trobareu }}</h2>
   <ul class="plafo plafo-gran">
     {% for s in MENU %}{% if s.url != '/inici' %}
     <li class="cel cel-{{ s.icona }}">
-      <a class="cel-cap" href="{{ link(s.url) }}">{{ B.icon(s.icona) }}<span>{{ s.titol }}</span></a>
-      {% if s.fills %}<p class="cel-fills">{% for f in s.fills %}{{ f.titol }}{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
+      <a class="cel-cap" href="{{ link(s.url) }}">{{ B.icon(s.icona) }}<span>{{ titol(s) }}</span></a>
+      {% if s.fills %}<p class="cel-fills">{% for f in s.fills %}{{ titol(f) }}{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
     </li>
     {% endif %}{% endfor %}
   </ul>

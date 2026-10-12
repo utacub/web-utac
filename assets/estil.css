@@ -140,6 +140,14 @@ p, ul, ol { margin: 0 0 1rem; }
 .rapids { display: flex; gap: .25rem 1.25rem; flex-wrap: wrap; }
 .rapids a { color: inherit; text-decoration: none; font-weight: 700; padding: .35rem 0; border-bottom: 3px solid transparent; }
 .rapids a:hover, .rapids a[aria-current="page"] { border-bottom-color: currentColor; color: inherit; }
+/* Selector d'idioma */
+.idiomes ul { list-style: none; margin: 0; padding: 0; display: flex; gap: .25rem; }
+.idiomes a { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; padding: 0 .4rem; color: inherit; text-decoration: none; font-weight: 700; font-size: .95rem; letter-spacing: .03em; border-radius: var(--radi); border: 2px solid transparent; }
+.idiomes a:hover { border-color: currentColor; color: inherit; }
+.idiomes a[aria-current="true"] { background: var(--cap-tinta); color: var(--cap-fons); }
+[data-proposta="plafo"] .idiomes a[aria-current="true"] { background: #f2c230; color: #1d2b3a; }
+.sense-traduccio { background: var(--superficie); border-left: 4px solid var(--focus); padding: .6rem .9rem; font-size: .95rem; }
+.no-trobada-altre { margin-top: 2rem; border-top: 1px solid var(--linia); padding-top: 1rem; }
 .boto-menu { display: inline-flex; align-items: center; gap: .5rem; font: inherit; font-weight: 700; color: var(--cap-tinta); background: transparent; border: 2px solid currentColor; border-radius: var(--radi); padding: .45rem .9rem; cursor: pointer; min-height: 44px; }
 .boto-menu:hover { background: var(--cap-tinta); color: var(--cap-fons); }
 .boto-menu[aria-expanded="true"] { background: var(--cap-tinta); color: var(--cap-fons); }
@@ -295,6 +303,7 @@ details[open] > summary::after { content: "–"; }
 
 @media (max-width: 700px) {
   .rapids { order: 3; width: 100%; font-size: .95rem; }
+  .idiomes a { min-width: 40px; font-size: .9rem; }
   .marca-nom { font-size: .9rem; max-width: 15ch; }
   .marca-logo { width: 72px; }
   [data-proposta="plafo"] .marca-nom { padding-left: .6rem; }
