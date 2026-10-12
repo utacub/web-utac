@@ -39,7 +39,9 @@
       {% for a in SITE.accessos_rapids %}<a href="{{ link(a.url) }}"{% if current == a.url %} aria-current="page"{% endif %}>{{ titol(a) }}</a>{% endfor %}
     </nav>
     {% if alternatives %}<nav class="idiomes" aria-label="{{ T.idioma }}">
-      <ul>{% for a in alternatives %}<li><a href="{{ a.href }}" lang="{{ a.codi }}" hreflang="{{ a.codi }}"{% if a.codi == lang %} aria-current="true"{% endif %}><span aria-hidden="true">{{ a.codi|upper }}</span><span class="vh">{{ a.nom }}</span></a></li>{% endfor %}</ul>
+      {%- set actual = alternatives|selectattr('codi', 'equalto', lang)|first %}
+      <button class="boto-idioma" type="button" aria-expanded="false" aria-controls="llista-idiomes">{{ icon('web') }}<span aria-hidden="true">{{ lang|upper }}</span><span class="vh">{{ T.idioma }}: {{ actual.nom }}</span>{{ icon('avall', 'ic ic-avall') }}</button>
+      <ul id="llista-idiomes" class="llista-idiomes" hidden>{% for a in alternatives %}<li><a href="{{ a.href }}" lang="{{ a.codi }}" hreflang="{{ a.codi }}"{% if a.codi == lang %} aria-current="true"{% endif %}><span class="codi" aria-hidden="true">{{ a.codi|upper }}</span>{{ a.nom }}</a></li>{% endfor %}</ul>
     </nav>{% endif %}
     <button class="boto-menu" type="button" aria-expanded="false" aria-controls="menu-plafo">
       {{ icon('menu') }}<span>{{ T.menu }}</span>

@@ -14,6 +14,28 @@
     });
   }
 
+  // Selector d'idioma desplegable
+  var botoIdioma = document.querySelector('.boto-idioma');
+  var llistaIdiomes = document.getElementById('llista-idiomes');
+  if (botoIdioma && llistaIdiomes) {
+    function tancaIdiomes(retornaFocus) {
+      llistaIdiomes.hidden = true; botoIdioma.setAttribute('aria-expanded', 'false');
+      if (retornaFocus) botoIdioma.focus();
+    }
+    botoIdioma.addEventListener('click', function () {
+      var obert = botoIdioma.getAttribute('aria-expanded') === 'true';
+      if (obert) { tancaIdiomes(false); return; }
+      llistaIdiomes.hidden = false; botoIdioma.setAttribute('aria-expanded', 'true');
+      var a = llistaIdiomes.querySelector('a'); if (a) a.focus();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !llistaIdiomes.hidden) tancaIdiomes(true);
+    });
+    document.addEventListener('click', function (e) {
+      if (!llistaIdiomes.hidden && !e.target.closest('.idiomes')) tancaIdiomes(false);
+    });
+  }
+
   // Els vídeos només es carreguen (amb youtube-nocookie) quan algú els vol veure
   document.querySelectorAll('.video-marc').forEach(function (marc) {
     var a = marc.querySelector('.video-inici');
