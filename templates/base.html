@@ -2,12 +2,14 @@
 <svg class="{{ cls }}" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{{ ICONS[name]|safe }}</svg>
 {%- endmacro -%}
 <!doctype html>
-<html lang="ca" data-proposta="plafo">
+<html lang="{{ lang }}" data-proposta="plafo">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% block title %}{{ page.titol }} · UTAC{% endblock %}</title>
-<meta name="description" content="{% block description %}Unitat de Tècniques Augmentatives de Comunicació (UTAC): comunicació augmentativa i tecnologies de suport.{% endblock %}">
+<meta name="description" content="{% block description %}{{ T.descripcio }}{% endblock %}">
+{% for a in alternatives %}<link rel="alternate" hreflang="{{ a.codi }}" href="{{ a.abs }}">
+{% endfor %}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 {% if PREVIEW %}<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Lexend:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">{% else %}<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">{% endif %}
@@ -15,7 +17,7 @@
 <link rel="icon" href="{{ img(SITE.logo) }}">
 </head>
 <body>
-<a class="salta" href="#contingut">Salta al contingut</a>
+<a class="salta" href="#contingut">{{ T.salta }}</a>
 {% if PREVIEW %}
 <div class="prova" role="region" aria-label="Versió de prova">
   <p><strong>Versió de prova.</strong> El web oficial continua sent www.utac.cat.</p>
@@ -31,23 +33,26 @@
   <div class="cap-dins">
     <a class="marca" href="{{ link('/inici') }}">
       <img class="marca-logo" src="{{ img(SITE.logo) }}" alt="" width="120" height="56">
-      <span class="marca-nom">Unitat de Tècniques Augmentatives de Comunicació</span>
+      <span class="marca-nom">{{ T.nom_unitat }}</span>
     </a>
-    <nav class="rapids" aria-label="Accessos ràpids">
-      {% for a in SITE.accessos_rapids %}<a href="{{ link(a.url) }}"{% if current == a.url %} aria-current="page"{% endif %}>{{ a.titol }}</a>{% endfor %}
+    <nav class="rapids" aria-label="{{ T.accessos_rapids }}">
+      {% for a in SITE.accessos_rapids %}<a href="{{ link(a.url) }}"{% if current == a.url %} aria-current="page"{% endif %}>{{ titol(a) }}</a>{% endfor %}
     </nav>
+    {% if alternatives %}<nav class="idiomes" aria-label="{{ T.idioma }}">
+      <ul>{% for a in alternatives %}<li><a href="{{ a.href }}" lang="{{ a.codi }}" hreflang="{{ a.codi }}"{% if a.codi == lang %} aria-current="true"{% endif %}><span aria-hidden="true">{{ a.codi|upper }}</span><span class="vh">{{ a.nom }}</span></a></li>{% endfor %}</ul>
+    </nav>{% endif %}
     <button class="boto-menu" type="button" aria-expanded="false" aria-controls="menu-plafo">
-      {{ icon('menu') }}<span>Menú</span>
+      {{ icon('menu') }}<span>{{ T.menu }}</span>
     </button>
   </div>
-  <nav id="menu-plafo" class="menu-plafo" aria-label="Menú principal" hidden>
+  <nav id="menu-plafo" class="menu-plafo" aria-label="{{ T.menu_principal }}" hidden>
     <ul class="plafo">
       {% for s in MENU %}
       <li class="cel cel-{{ s.icona }}">
-        <a class="cel-cap" href="{{ link(s.url) }}"{% if current == s.url %} aria-current="page"{% endif %}>{{ icon(s.icona) }}<span>{{ s.titol }}</span></a>
+        <a class="cel-cap" href="{{ link(s.url) }}"{% if current == s.url %} aria-current="page"{% endif %}>{{ icon(s.icona) }}<span>{{ titol(s) }}</span></a>
         {% if s.fills %}
         <ul>
-          {% for f in s.fills %}<li><a href="{{ link(f.url) }}"{% if current == f.url %} aria-current="page"{% endif %}>{{ f.titol }}</a></li>{% endfor %}
+          {% for f in s.fills %}<li><a href="{{ link(f.url) }}"{% if current == f.url %} aria-current="page"{% endif %}>{{ titol(f) }}</a></li>{% endfor %}
         </ul>
         {% endif %}
       </li>
@@ -63,15 +68,15 @@
 <footer class="peu">
   <div class="peu-dins">
     <div>
-      <p class="peu-nom">{{ SITE.peu }}</p>
-      <p>Servei extern de la Facultat de Psicologia de la Universitat de Barcelona</p>
+      <p class="peu-nom">{{ T.peu_nom }}</p>
+      <p>{{ T.servei_extern }}</p>
     </div>
     <ul class="peu-llista">
       {% for c in SITE.correus %}<li><a href="mailto:{{ c }}">{{ c }}</a></li>{% endfor %}
       {% for x in SITE.xarxes %}<li><a class="peu-xarxa" href="{{ x.url }}">{{ icon(x.icona) }}<span>{{ x.nom }} {{ x.compte }}</span></a></li>{% endfor %}
     </ul>
-    <nav aria-label="Seccions" class="peu-seccions">
-      <ul>{% for s in MENU %}<li><a href="{{ link(s.url) }}">{{ s.titol }}</a></li>{% endfor %}</ul>
+    <nav aria-label="{{ T.seccions }}" class="peu-seccions">
+      <ul>{% for s in MENU %}<li><a href="{{ link(s.url) }}">{{ titol(s) }}</a></li>{% endfor %}</ul>
     </nav>
   </div>
 </footer>

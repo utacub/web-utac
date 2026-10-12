@@ -1,0 +1,112 @@
+nom_unitat:
+  ca: Unitat de Tècniques Augmentatives de Comunicació
+  es: Unidad de Técnicas Aumentativas de Comunicación
+  en: Augmentative Communication Techniques Unit
+peu_nom:
+  ca: Unitat de Tècniques Augmentatives de Comunicació (UTAC)
+  es: Unidad de Técnicas Aumentativas de Comunicación (UTAC)
+  en: Augmentative Communication Techniques Unit (UTAC)
+servei_extern:
+  ca: Servei extern de la Facultat de Psicologia de la Universitat de Barcelona
+  es: Servicio externo de la Facultad de Psicología de la Universidad de Barcelona
+  en: External service of the Faculty of Psychology, University of Barcelona
+descripcio:
+  ca: 'Unitat de Tècniques Augmentatives de Comunicació (UTAC): comunicació augmentativa i tecnologies de suport.'
+  es: 'Unidad de Técnicas Aumentativas de Comunicación (UTAC): comunicación aumentativa y tecnologías de apoyo.'
+  en: 'Augmentative Communication Techniques Unit (UTAC): augmentative communication and assistive technology.'
+salta:
+  ca: Salta al contingut
+  es: Saltar al contenido
+  en: Skip to content
+menu:
+  ca: Menú
+  es: Menú
+  en: Menu
+menu_principal:
+  ca: Menú principal
+  es: Menú principal
+  en: Main menu
+accessos_rapids:
+  ca: Accessos ràpids
+  es: Accesos rápidos
+  en: Quick links
+idioma:
+  ca: Idioma
+  es: Idioma
+  en: Language
+seccions:
+  ca: Seccions
+  es: Secciones
+  en: Sections
+sou_aqui:
+  ca: Sou aquí
+  es: Estáis aquí
+  en: You are here
+inici:
+  ca: Inici
+  es: Inicio
+  en: Home
+que_hi_trobareu:
+  ca: Què hi trobareu
+  es: Qué encontraréis
+  en: What you will find
+canal_telegram:
+  ca: Canal de Telegram
+  es: Canal de Telegram
+  en: Telegram channel
+sense_traduccio:
+  ca: ''
+  es: Esta página todavía no está traducida al castellano; se muestra en catalán.
+  en: This page has not been translated into English yet; it is shown in Catalan.
+descarrega_html:
+  ca: Descarrega l'HTML
+  es: Descargar el HTML
+  en: Download the HTML
+fitxers:
+  ca: fitxers
+  es: archivos
+  en: files
+fitxer:
+  ca: Fitxer
+  es: Archivo
+  en: File
+carpeta_drive:
+  ca: Obre la carpeta completa a Google Drive
+  es: Abrir la carpeta completa en Google Drive
+  en: Open the full folder in Google Drive
+reprodueix_video:
+  ca: Reprodueix el vídeo
+  es: Reproducir el vídeo
+  en: Play the video
+video_youtube:
+  ca: Vídeo de YouTube
+  es: Vídeo de YouTube
+  en: YouTube video
+telefon:
+  ca: Telèfon
+  es: Teléfono
+  en: Phone
+correu:
+  ca: Correu
+  es: Correo
+  en: Email
+com_arribar:
+  ca: Com arribar-hi i mapa
+  es: Cómo llegar y mapa
+  en: How to get there and map
+de:
+  ca: de
+  es: de
+  en: for
+obre_maps:
+  ca: Obre la ubicació a Google Maps
+  es: Abrir la ubicación en Google Maps
+  en: Open the location in Google Maps
+no_trobada_titol:
+  ca: No hem trobat aquesta pàgina
+  es: No hemos encontrado esta página
+  en: Page not found
+no_trobada_text:
+  ca: Potser l'adreça ha canviat. Podeu tornar a l'inici o fer servir el menú per trobar la secció que cerqueu.
+  es: Quizá la dirección ha cambiado. Podéis volver al inicio o usar el menú para encontrar la sección que buscáis.
+  en: The address may have changed. You can go back to the home page or use the menu to find the section you are looking for.

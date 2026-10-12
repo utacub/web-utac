@@ -1,108 +1,196 @@
 menu:
 - titol: Inici
+  titol_es: Inicio
+  titol_en: Home
   url: /inici
   icona: casa
   fills:
   - titol: Informació del servei
+    titol_es: Información del servicio
+    titol_en: About the service
     url: /inici/informacio
   - titol: Protocol de demanda de servei de la UTAC-Educació
+    titol_es: Protocolo de solicitud de servicio de la UTAC Educació
+    titol_en: UTAC Educació service request protocol
     url: /inici/protocol-utac-ensenyament
 - titol: Contacte
+  titol_es: Contacto
+  titol_en: Contact
   url: /contacte-1
   icona: contacte
   fills:
   - titol: UTAC Educació
+    titol_es: UTAC Educació
+    titol_en: UTAC Educació
     url: /contacte-1/contacte-utac-ensenyament
   - titol: UTAC Sírius
+    titol_es: UTAC Sírius
+    titol_en: UTAC Sírius
     url: /contacte-1/contacte-utac-sirius
 - titol: Descàrregues
+  titol_es: Descargas
+  titol_en: Downloads
   url: /descarregues
   icona: descarrega
   fills:
   - titol: CACE-UTAC
+    titol_es: CACE-UTAC
+    titol_en: CACE-UTAC
     url: /descarregues/cace-utac
   - titol: Exemples de llibres de comunicació per adults amb afàsia
+    titol_es: Ejemplos de libros de comunicación para adultos con afasia
+    titol_en: Sample communication books for adults with aphasia
     url: /descarregues/llibrets-de-comunicacio-per-afasia
   - titol: Plafons alfabètics
+    titol_es: Tableros alfabéticos
+    titol_en: Alphabet boards
     url: /descarregues/plafons-alfabetics
   - titol: Plafons monogràfics d'activitats
+    titol_es: Tableros monográficos de actividades
+    titol_en: Activity-specific boards
     url: /descarregues/plafons-monografics
 - titol: Equip
+  titol_es: Equipo
+  titol_en: Team
   url: /equip
   icona: persones
 - titol: Multimèdia
+  titol_es: Multimedia
+  titol_en: Multimedia
   url: /multimedia
   icona: video
   fills:
   - titol: Didàctics
+    titol_es: Didácticos
+    titol_en: Teaching videos
     url: /multimedia/didactics
     fills:
     - titol: Les primeres etapes
+      titol_es: Las primeras etapas
+      titol_en: The first stages
       url: /multimedia/didactics/videos
     - titol: L'ús de sistemes de signes i ajuts tècnics
+      titol_es: El uso de sistemas de signos y ayudas técnicas
+      titol_en: Using sign systems and technical aids
       url: /multimedia/didactics/lús-de-sistemes-de-signes-i-ajuts-tècnics
     - titol: Habilitats de conversa
+      titol_es: Habilidades de conversación
+      titol_en: Conversation skills
       url: /multimedia/didactics/habilitats-de-conversa
     - titol: Normalització i independència
+      titol_es: Normalización e independencia
+      titol_en: Normalisation and independence
       url: /multimedia/didactics/normalització-i-independència
     - titol: Estratègies inicials
+      titol_es: Estrategias iniciales
+      titol_en: Initial strategies
       url: /multimedia/didactics/estrategies-inicials
   - titol: Exemples d'ús de productes de suport
+    titol_es: Ejemplos de uso de productos de apoyo
+    titol_en: Examples of assistive products in use
     url: /multimedia/exemples-us-productes-suport
   - titol: Tutorials
+    titol_es: Tutoriales
+    titol_en: Tutorials
     url: /multimedia/tutorials
     fills:
     - titol: Llibres electrònics
+      titol_es: Libros electrónicos
+      titol_en: E-books
       url: /multimedia/tutorials/llibres-electronics
     - titol: Opcions d'accessibilitat Vista
+      titol_es: Opciones de accesibilidad Vista
+      titol_en: Accessibility options Vista
       url: /multimedia/tutorials/opcions-d-accessibilitat-vista
     - titol: Opcions d'accessibilitat XP
+      titol_es: Opciones de accesibilidad XP
+      titol_en: Accessibility options XP
       url: /multimedia/tutorials/opcions-d-accessibilitat
     - titol: Personalització de Word
+      titol_es: Personalización de Word
+      titol_en: Customising Word
       url: /multimedia/tutorials/personalitzacio-de-word
     - titol: Ratolí Vista
+      titol_es: Ratón Vista
+      titol_en: Mouse Vista
       url: /multimedia/tutorials/windows-vista-opcions-de-ratoli
     - titol: Ratolí XP
+      titol_es: Ratón XP
+      titol_en: Mouse XP
       url: /multimedia/tutorials/ratoli
 - titol: Apps de comunicació augmentativa i alternativa
+  titol_es: Apps de comunicación aumentativa y alternativa
+  titol_en: Augmentative and alternative communication apps
   url: /apps-per-a-la-comunicacio
   icona: tauleta
   fills:
   - titol: iOS (iPod, iPhone i/o iPad)
+    titol_es: iOS (iPod, iPhone y/o iPad)
+    titol_en: iOS (iPod, iPhone and/or iPad)
     url: /apps-per-a-la-comunicacio/ios
   - titol: Android
+    titol_es: Android
+    titol_en: Android
     url: /apps-per-a-la-comunicacio/android
 - titol: Activitats creades amb IA
+  titol_es: Actividades creadas con IA
+  titol_en: Activities created with AI
   url: /activitats-creades-amb-ia
   icona: joc
 - titol: Productes de suport
+  titol_es: Productos de apoyo
+  titol_en: Assistive products
   url: /productes-suport
   icona: commutador
   fills:
   - titol: Ratolins
+    titol_es: Ratones
+    titol_en: Mice
     url: /productes-suport/ratolins-i-emuladors-de-ratolí
   - titol: Teclats
+    titol_es: Teclados
+    titol_en: Keyboards
     url: /productes-suport/teclats
   - titol: Commutadors
+    titol_es: Conmutadores
+    titol_en: Switches
     url: /productes-suport/commutadors
   - titol: Comunicadors electrònics
+    titol_es: Comunicadores electrónicos
+    titol_en: Electronic communication aids
     url: /productes-suport/comunicadors
   - titol: Control d'entorn
+    titol_es: Control del entorno
+    titol_en: Environmental control
     url: /productes-suport/control-d-entorn
   - titol: Joguines de piles
+    titol_es: Juguetes de pilas
+    titol_en: Battery-operated toys
     url: /productes-suport/joguines
   - titol: Muntatges i suports
+    titol_es: Montajes y soportes
+    titol_en: Mounts and supports
     url: /productes-suport/muntatges-i-suports
   - titol: Plafons i llibres de comunicació
+    titol_es: Tableros y libros de comunicación
+    titol_en: Communication boards and books
     url: /productes-suport/plafons
 - titol: Recursos d'Internet
+  titol_es: Recursos de Internet
+  titol_en: Internet resources
   url: /recursos-d-internet
   icona: web
   fills:
   - titol: Vídeos d'interès
+    titol_es: Vídeos de interés
+    titol_en: Videos of interest
     url: /recursos-d-internet/videos-d-interes
   - titol: Webs d'interès
+    titol_es: Webs de interés
+    titol_en: Websites of interest
     url: /recursos-d-internet/webs-d-interes
 - titol: Bibliografia
+  titol_es: Bibliografía
+  titol_en: Bibliography
   url: /bibliografia
   icona: llibre

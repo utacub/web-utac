@@ -6,27 +6,28 @@
   {% include "portada.html" %}
 {% else %}
 <div class="pagina cel-{{ section.icona or 'casa' }}">
-  <nav class="molles" aria-label="Sou aquí">
+  <nav class="molles" aria-label="{{ T.sou_aqui }}">
     <ol>
-      <li><a href="{{ link('/inici') }}">Inici</a></li>
-      {% for p in parents %}{% if p.url != '/inici' %}<li><a href="{{ link(p.url) }}">{{ p.titol }}</a></li>{% endif %}{% endfor %}
-      <li aria-current="page">{{ node.titol }}</li>
+      <li><a href="{{ link('/inici') }}">{{ T.inici }}</a></li>
+      {% for p in parents %}{% if p.url != '/inici' %}<li><a href="{{ link(p.url) }}">{{ titol(p) }}</a></li>{% endif %}{% endfor %}
+      <li aria-current="page">{{ titol(node) }}</li>
     </ol>
   </nav>
   <div class="pagina-graella{% if section.fills and not page.sense_lateral %} amb-lateral{% endif %}">
     {% if section.fills and not page.sense_lateral %}
-    <nav class="lateral" aria-label="{{ section.titol }}">
-      <p class="lateral-titol"><a href="{{ link(section.url) }}"{% if current == section.url %} aria-current="page"{% endif %}>{{ B.icon(section.icona) }}{{ section.titol }}</a></p>
+    <nav class="lateral" aria-label="{{ titol(section) }}">
+      <p class="lateral-titol"><a href="{{ link(section.url) }}"{% if current == section.url %} aria-current="page"{% endif %}>{{ B.icon(section.icona) }}{{ titol(section) }}</a></p>
       <ul>
         {% for f in section.fills %}
-        <li><a href="{{ link(f.url) }}"{% if current == f.url %} aria-current="page"{% endif %}>{{ f.titol }}</a>
-          {% if f.fills %}<ul>{% for g in f.fills %}<li><a href="{{ link(g.url) }}"{% if current == g.url %} aria-current="page"{% endif %}>{{ g.titol }}</a></li>{% endfor %}</ul>{% endif %}
+        <li><a href="{{ link(f.url) }}"{% if current == f.url %} aria-current="page"{% endif %}>{{ titol(f) }}</a>
+          {% if f.fills %}<ul>{% for g in f.fills %}<li><a href="{{ link(g.url) }}"{% if current == g.url %} aria-current="page"{% endif %}>{{ titol(g) }}</a></li>{% endfor %}</ul>{% endif %}
         </li>
         {% endfor %}
       </ul>
     </nav>
     {% endif %}
-    <article class="cos">
+    <article class="cos"{% if lang_contingut != lang %} lang="{{ lang_contingut }}"{% endif %}>
+      {% if not traduida %}<p class="sense-traduccio" lang="{{ lang }}">{{ T.sense_traduccio }}</p>{% endif %}
       <h1>{{ page.titol }}</h1>
       {% for b in page.blocs %}{{ B.bloc(b) }}{% endfor %}
     </article>

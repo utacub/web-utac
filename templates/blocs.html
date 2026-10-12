@@ -7,8 +7,8 @@
 <ul class="previes" role="list">
   {% for f in items %}
   <li><a class="previa" href="{{ link(f.url) }}">
-    <span class="previa-img"><img src="{{ img(f.miniatura) }}" alt="" loading="lazy"><span class="tipus">{{ file_kind(f.nom) }}</span></span>
-    <span class="previa-peu">{{ icon('descarrega') }}<span class="previa-nom">{{ f.nom.rsplit('.', 1)[0] if '.' in f.nom else f.nom }}<span class="vh"> ({{ file_kind(f.nom) }})</span></span></span>
+    <span class="previa-img"><img src="{{ img(f.miniatura) }}" alt="" loading="lazy"><span class="tipus">{{ file_kind(f.nom) or T.fitxer }}</span></span>
+    <span class="previa-peu">{{ icon('descarrega') }}<span class="previa-nom">{{ f.nom.rsplit('.', 1)[0] if '.' in f.nom else f.nom }}<span class="vh"> ({{ file_kind(f.nom) or T.fitxer }})</span></span></span>
   </a></li>
   {% endfor %}
 </ul>
@@ -18,12 +18,12 @@
   {% if f.carpeta %}
   <li class="fitxer-carpeta">
     <details{% if nivell == 0 and items|length < 4 %} open{% endif %}>
-      <summary>{{ icon('carpeta') }}<span>{{ f.nom }}</span><span class="compte">{{ f.carpeta|length }} fitxers</span></summary>
+      <summary>{{ icon('carpeta') }}<span>{{ f.nom }}</span><span class="compte">{{ f.carpeta|length }} {{ T.fitxers }}</span></summary>
       {{ fitxers(f.carpeta, nivell + 1) }}
     </details>
   </li>
   {% else %}
-  <li><a class="fitxer" href="{{ link(f.url) }}">{{ icon('fitxer') }}<span class="fitxer-nom">{{ f.nom }}</span><span class="tipus">{{ file_kind(f.nom) }}</span></a></li>
+  <li><a class="fitxer" href="{{ link(f.url) }}">{{ icon('fitxer') }}<span class="fitxer-nom">{{ f.nom }}</span><span class="tipus">{{ file_kind(f.nom) or T.fitxer }}</span></a></li>
   {% endif %}
   {% endfor %}
 </ul>
@@ -48,7 +48,7 @@
     {%- set nova = b.format == 'captures' %}
     <div class="fitxa-img">{% if f.enllac %}<a href="{{ link(f.enllac) }}" tabindex="-1"{% if nova %} target="_blank" rel="noopener"{% endif %}>{% endif %}<img src="{{ img(f.imatge) }}" alt="{{ f.alt }}" loading="lazy">{% if f.enllac %}</a>{% endif %}</div>
     <div class="fitxa-text">{% if nova %}{{ md(f.text)|replace('<a href="http', '<a target="_blank" rel="noopener" href="http')|safe }}{% else %}{{ md(f.text)|safe }}{% endif %}{% if f.descarrega %}
-      <a class="boto-descarrega" href="{{ link(f.descarrega) }}" download>{{ icon('descarrega') }}<span>Descarrega l'HTML</span></a>{% endif %}</div>
+      <a class="boto-descarrega" href="{{ link(f.descarrega) }}" download>{{ icon('descarrega') }}<span>{{ T.descarrega_html }}</span></a>{% endif %}</div>
   </li>
   {% endfor %}
 </ul>
@@ -59,8 +59,8 @@
   <li class="video">
     <div class="video-marc" data-youtube="{{ v.youtube }}">
       <a class="video-inici" href="https://www.youtube.com/watch?v={{ v.youtube }}">
-        {% if not PREVIEW %}<img src="https://i.ytimg.com/vi/{{ v.youtube }}/hqdefault.jpg" alt="" loading="lazy">{% else %}<span class="video-prova">Vídeo de YouTube</span>{% endif %}
-        <span class="video-boto">{{ icon('play') }}<span class="vh">Reprodueix el vídeo{% if v.text %}: {{ v.text|striptags|truncate(80) }}{% endif %}</span></span>
+        {% if not PREVIEW %}<img src="https://i.ytimg.com/vi/{{ v.youtube }}/hqdefault.jpg" alt="" loading="lazy">{% else %}<span class="video-prova">{{ T.video_youtube }}</span>{% endif %}
+        <span class="video-boto">{{ icon('play') }}<span class="vh">{{ T.reprodueix_video }}{% if v.text %}: {{ v.text|striptags|truncate(80) }}{% endif %}</span></span>
       </a>
     </div>
     {% if v.text %}<div class="video-text">{{ md(v.text)|safe }}</div>{% endif %}
@@ -71,7 +71,7 @@
 {% elif b.tipus == 'descarregues' %}
 <div class="descarregues">
   {{ fitxers(b.fitxers) }}
-  {% if b.carpeta_drive %}<p class="carpeta-drive"><a href="{{ b.carpeta_drive }}">Obre la carpeta completa a Google Drive</a></p>{% endif %}
+  {% if b.carpeta_drive %}<p class="carpeta-drive"><a href="{{ b.carpeta_drive }}">{{ T.carpeta_drive }}</a></p>{% endif %}
 </div>
 
 {% elif b.tipus == 'persones' %}
@@ -95,9 +95,9 @@
     <h2>{{ s.nom }}</h2>
     <p class="servei-dept">{{ s.departament }}</p>
     <div class="servei-adreca">{{ md(s.adreca)|safe }}</div>
-    <p>{% for t in s.telefons %}Telèfon: <a href="tel:+34{{ t.tel }}">{{ t.text }}</a>{% if t.nota %} ({{ t.nota }}){% endif %}<br>{% endfor %}
-    Correu: <a href="mailto:{{ s.correu }}">{{ s.correu }}</a></p>
-    <p class="servei-acc"><a href="{{ link(s.url) }}">Com arribar-hi i mapa<span class="vh"> de {{ s.nom }}</span> →</a></p>
+    <p>{% for t in s.telefons %}{{ T.telefon }}: <a href="tel:+34{{ t.tel }}">{{ t.text }}</a>{% if t.nota %} ({{ t.nota }}){% endif %}<br>{% endfor %}
+    {{ T.correu }}: <a href="mailto:{{ s.correu }}">{{ s.correu }}</a></p>
+    <p class="servei-acc"><a href="{{ link(s.url) }}">{{ T.com_arribar }}<span class="vh"> {{ T.de }} {{ s.nom }}</span> →</a></p>
   </li>
   {% endfor %}
 </ul>
@@ -106,7 +106,7 @@
 <div class="mapa-bloc">
   {% if PREVIEW %}<div class="mapa mapa-prova"><p><strong>Aquí es mostrarà el mapa interactiu de Google Maps.</strong><br>La versió de prova no permet incrustar-lo; al web publicat es veurà en directe.</p></div>
   {% else %}<div class="mapa"><iframe src="{{ b.url }}" title="{{ b.titol }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>{% endif %}
-  {% if b.enllac %}<p class="mapa-enllac"><a href="{{ b.enllac }}">Obre la ubicació a Google Maps</a></p>{% endif %}
+  {% if b.enllac %}<p class="mapa-enllac"><a href="{{ b.enllac }}">{{ T.obre_maps }}</a></p>{% endif %}
 </div>
 {% endif %}
 {%- endmacro -%}

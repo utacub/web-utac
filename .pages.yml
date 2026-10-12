@@ -25,8 +25,8 @@ components:
 content:
   # ---------------------------------------------------------------
   - name: pagines
-    label: Pàgines del web
-    description: Totes les pàgines, organitzades per carpetes com al menú. La pàgina d'inici té un apartat propi.
+    label: Pàgines del web (català)
+    description: Totes les pàgines, organitzades per carpetes com al menú. La pàgina d'inici té un apartat propi. Les versions en castellà i anglès són a «Pàgines en castellà» i «Pàgines en anglès».
     type: collection
     path: content
     format: yaml-frontmatter
@@ -270,7 +270,7 @@ content:
 
   # ---------------------------------------------------------------
   - name: inici
-    label: Pàgina d'inici
+    label: Pàgina d'inici (català)
     type: file
     path: content/inici.md
     format: yaml-frontmatter
@@ -328,6 +328,622 @@ content:
             type: string
 
   # ---------------------------------------------------------------
+  - name: inici_es
+    label: Pàgina d'inici (castellà)
+    type: file
+    path: content-es/inici.md
+    format: yaml-frontmatter
+    fields:
+      - name: titol
+        label: Títol principal
+        type: string
+      - name: ordre
+        type: number
+        hidden: true
+      - name: plantilla
+        type: string
+        hidden: true
+      - name: qui_som
+        label: Apartat «Qui som?»
+        type: object
+        fields:
+          - name: titol
+            label: Títol
+            type: string
+          - name: text
+            label: Text
+            component: text_ric
+      - name: enllacos
+        label: Botons destacats (a la dreta del «Qui som?»)
+        type: object
+        list: true
+        fields:
+          - name: titol
+            label: Text del botó
+            type: string
+          - name: url
+            label: Pàgina on porta (p. ex. /contacte-1/contacte-utac-sirius)
+            type: string
+      - name: avis
+        label: Avís destacat (canal de Telegram)
+        type: object
+        fields:
+          - name: imatge
+            label: Icona
+            type: image
+            options: { media: imatges }
+          - name: alt
+            label: Descripció de la icona
+            type: string
+          - name: text
+            label: Text
+            component: text_ric
+      - name: xarxa
+        label: Xarxes socials
+        type: object
+        fields:
+          - name: text
+            label: Frase que acompanya els botons de xarxes
+            type: string
+
+  # ---------------------------------------------------------------
+  - name: inici_en
+    label: Pàgina d'inici (anglès)
+    type: file
+    path: content-en/inici.md
+    format: yaml-frontmatter
+    fields:
+      - name: titol
+        label: Títol principal
+        type: string
+      - name: ordre
+        type: number
+        hidden: true
+      - name: plantilla
+        type: string
+        hidden: true
+      - name: qui_som
+        label: Apartat «Qui som?»
+        type: object
+        fields:
+          - name: titol
+            label: Títol
+            type: string
+          - name: text
+            label: Text
+            component: text_ric
+      - name: enllacos
+        label: Botons destacats (a la dreta del «Qui som?»)
+        type: object
+        list: true
+        fields:
+          - name: titol
+            label: Text del botó
+            type: string
+          - name: url
+            label: Pàgina on porta (p. ex. /contacte-1/contacte-utac-sirius)
+            type: string
+      - name: avis
+        label: Avís destacat (canal de Telegram)
+        type: object
+        fields:
+          - name: imatge
+            label: Icona
+            type: image
+            options: { media: imatges }
+          - name: alt
+            label: Descripció de la icona
+            type: string
+          - name: text
+            label: Text
+            component: text_ric
+      - name: xarxa
+        label: Xarxes socials
+        type: object
+        fields:
+          - name: text
+            label: Frase que acompanya els botons de xarxes
+            type: string
+
+  # ---------------------------------------------------------------
+  - name: pagines_es
+    label: Pàgines en castellà
+    description: Traducció al castellà de les pàgines del web. Cada pàgina és a la mateixa carpeta i amb el mateix nom de fitxer que la catalana. Si una pàgina no hi és, el web mostra el text català.
+    type: collection
+    path: content-es
+    format: yaml-frontmatter
+    subfolders: true
+    exclude: [inici.md]
+    filename: "{primary}.md"
+    view:
+      fields: [titol]
+      primary: titol
+      sort: [titol]
+    fields:
+      - name: titol
+        label: Títol de la pàgina
+        type: string
+        required: true
+      - name: original
+        label: Pàgina catalana que tradueix (només per a pàgines noves)
+        description: "L'adreça de la pàgina catalana, p. ex. /productes-suport/teclats. Cal omplir-ho quan es crea una pàgina nova aquí, perquè el nom del fitxer surt del títol traduït."
+        type: string
+      - name: ordre
+        label: Ordre
+        type: number
+        hidden: true
+      - name: sense_lateral
+        label: Amaga el menú lateral en aquesta pàgina
+        type: boolean
+        hidden: true
+      - name: blocs
+        label: Contingut de la pàgina
+        description: La pàgina es compon de blocs, que es mostren en aquest ordre. Es poden afegir, treure i reordenar.
+        type: block
+        list: true
+        blockKey: tipus
+        blocks:
+          - name: text
+            label: Text
+            fields:
+              - name: text
+                label: Text
+                component: text_ric
+
+          - name: imatge
+            label: Imatge
+            fields:
+              - name: imatge
+                label: Imatge
+                type: image
+                options: { media: imatges }
+              - name: alt
+                label: Descripció de la imatge (per a persones cegues)
+                description: Què es veu a la imatge, en una frase. Obligatori per accessibilitat.
+                type: string
+              - name: enllac
+                label: Enllaç en clicar la imatge (opcional)
+                type: string
+
+          - name: fitxes
+            label: Fitxes amb imatge (graella)
+            fields:
+              - name: format
+                label: Format de les fitxes
+                description: «Icones d'aplicació» mostra totes les icones a la mateixa mida i tots els requadres iguals.
+                type: select
+                options:
+                  values:
+                    - { value: fotos, label: Fotografies }
+                    - { value: icones, label: Icones d'aplicació }
+                    - { value: captures, label: Captures de pantalla (GIF o imatge apaïsada) }
+              - name: fitxes
+                label: Fitxes
+                type: object
+                list:
+                  collapsible: { collapsed: true, summary: "Fitxa {index}" }
+                fields:
+                  - name: imatge
+                    label: Imatge
+                    type: image
+                    options: { media: imatges }
+                  - name: alt
+                    label: Descripció de la imatge
+                    type: string
+                  - name: enllac
+                    label: Enllaç en clicar la imatge (opcional)
+                    type: string
+                  - name: text
+                    label: Text
+                    component: text_ric
+                  - name: descarrega
+                    label: Fitxer per descarregar (opcional)
+                    description: Si s'omple, sota el text apareix un botó de descàrrega.
+                    type: string
+
+          - name: videos
+            label: Vídeos de YouTube
+            fields:
+              - name: videos
+                label: Vídeos
+                type: object
+                list:
+                  collapsible: { collapsed: true, summary: "Vídeo {index}: {youtube}" }
+                fields:
+                  - name: youtube
+                    label: Codi del vídeo de YouTube
+                    description: "Les lletres que hi ha darrere de 'watch?v=' a l'adreça del vídeo. Per exemple, de https://www.youtube.com/watch?v=OAmx-ImNqco cal posar OAmx-ImNqco"
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text que acompanya el vídeo
+                    component: text_ric
+
+          - name: descarregues
+            label: Descàrregues
+            fields:
+              - name: carpeta_drive
+                label: Enllaç a la carpeta completa de Google Drive (opcional)
+                type: string
+              - name: fitxers
+                label: Fitxers
+                type: object
+                list:
+                  collapsible: { collapsed: true, summary: "{nom}" }
+                fields:
+                  - name: nom
+                    label: Nom que es mostra (amb l'extensió, p. ex. Plafó.pdf)
+                    type: string
+                  - name: url
+                    label: Enllaç de descàrrega
+                    description: Enllaç de Dropbox o Google Drive. Si és una carpeta amb diversos fitxers, deixeu-ho buit i ompliu «Fitxers de la carpeta».
+                    type: string
+                  - name: miniatura
+                    label: Miniatura de la primera pàgina (opcional)
+                    description: Si tots els fitxers del bloc en tenen, es mostren com a targetes amb imatge.
+                    type: image
+                    options: { media: imatges, path: assets/img/miniatures }
+                  - name: carpeta
+                    label: Fitxers de la carpeta
+                    type: object
+                    list:
+                      collapsible: { collapsed: true, summary: "{nom}" }
+                    fields:
+                      - name: nom
+                        label: Nom
+                        type: string
+                      - name: url
+                        label: Enllaç de descàrrega
+                        type: string
+                      - name: carpeta
+                        label: Subcarpeta
+                        type: object
+                        list:
+                          collapsible: { collapsed: true, summary: "{nom}" }
+                        fields:
+                          - name: nom
+                            label: Nom
+                            type: string
+                          - name: url
+                            label: Enllaç de descàrrega
+                            type: string
+
+          - name: persones
+            label: Persones (targetes de l'Equip)
+            fields:
+              - name: titol
+                label: Títol del grup (opcional)
+                type: string
+              - name: persones
+                label: Persones
+                type: object
+                list:
+                  collapsible: { collapsed: true, summary: "{nom}" }
+                fields:
+                  - name: nom
+                    label: Nom i cognoms
+                    type: string
+                  - name: text
+                    label: Descripció
+                    type: text
+
+          - name: nota
+            label: Nota destacada amb icona
+            fields:
+              - name: imatge
+                label: Icona
+                type: image
+                options: { media: imatges }
+              - name: alt
+                label: Descripció de la icona
+                type: string
+              - name: text
+                label: Text
+                component: text_ric
+
+          - name: mapa
+            label: Mapa de Google Maps
+            fields:
+              - name: url
+                label: Adreça d'inserció del mapa
+                description: A Google Maps, Comparteix → Insereix un mapa → copieu només l'adreça que hi ha dins de src="…".
+                type: string
+              - name: titol
+                label: Descripció del mapa (per a persones cegues)
+                type: string
+              - name: enllac
+                label: Enllaç per obrir la ubicació a Google Maps
+                type: string
+
+          - name: serveis
+            label: Targetes de contacte dels serveis
+            fields:
+              - name: serveis
+                label: Serveis
+                type: object
+                list:
+                  collapsible: { collapsed: true, summary: "{nom}" }
+                fields:
+                  - name: nom
+                    label: Nom del servei
+                    type: string
+                  - name: departament
+                    label: Departament
+                    type: string
+                  - name: adreca
+                    label: Adreça
+                    type: text
+                  - name: telefons
+                    label: Telèfons
+                    type: object
+                    list: true
+                    fields:
+                      - name: text
+                        label: Telèfon tal com es mostra (p. ex. 638 767 515)
+                        type: string
+                      - name: tel
+                        label: Telèfon sense espais (per trucar des del mòbil)
+                        type: string
+                      - name: nota
+                        label: Nota (opcional, p. ex. també WhatsApp)
+                        type: string
+                  - name: correu
+                    label: Correu electrònic
+                    type: string
+                  - name: url
+                    label: Pàgina de la fitxa del servei
+                    type: string
+
+  # ---------------------------------------------------------------
+  - name: pagines_en
+    label: Pàgines en anglès
+    description: Traducció al anglès de les pàgines del web. Cada pàgina és a la mateixa carpeta i amb el mateix nom de fitxer que la catalana. Si una pàgina no hi és, el web mostra el text català.
+    type: collection
+    path: content-en
+    format: yaml-frontmatter
+    subfolders: true
+    exclude: [inici.md]
+    filename: "{primary}.md"
+    view:
+      fields: [titol]
+      primary: titol
+      sort: [titol]
+    fields:
+      - name: titol
+        label: Títol de la pàgina
+        type: string
+        required: true
+      - name: original
+        label: Pàgina catalana que tradueix (només per a pàgines noves)
+        description: "L'adreça de la pàgina catalana, p. ex. /productes-suport/teclats. Cal omplir-ho quan es crea una pàgina nova aquí, perquè el nom del fitxer surt del títol traduït."
+        type: string
+      - name: ordre
+        label: Ordre
+        type: number
+        hidden: true
+      - name: sense_lateral
+        label: Amaga el menú lateral en aquesta pàgina
+        type: boolean
+        hidden: true
+      - name: blocs
+        label: Contingut de la pàgina
+        description: La pàgina es compon de blocs, que es mostren en aquest ordre. Es poden afegir, treure i reordenar.
+        type: block
+        list: true
+        blockKey: tipus
+        blocks:
+          - name: text
+            label: Text
+            fields:
+              - name: text
+                label: Text
+                component: text_ric
+
+          - name: imatge
+            label: Imatge
+            fields:
+              - name: imatge
+                label: Imatge
+                type: image
+                options: { media: imatges }
+              - name: alt
+                label: Descripció de la imatge (per a persones cegues)
+                description: Què es veu a la imatge, en una frase. Obligatori per accessibilitat.
+                type: string
+              - name: enllac
+                label: Enllaç en clicar la imatge (opcional)
+                type: string
+
+          - name: fitxes
+            label: Fitxes amb imatge (graella)
+            fields:
+              - name: format
+                label: Format de les fitxes
+                description: «Icones d'aplicació» mostra totes les icones a la mateixa mida i tots els requadres iguals.
+                type: select
+                options:
+                  values:
+                    - { value: fotos, label: Fotografies }
+                    - { value: icones, label: Icones d'aplicació }
+                    - { value: captures, label: Captures de pantalla (GIF o imatge apaïsada) }
+              - name: fitxes
+                label: Fitxes
+                type: object
+                list:
+                  collapsible: { collapsed: true, summary: "Fitxa {index}" }
+                fields:
+                  - name: imatge
+                    label: Imatge
+                    type: image
+                    options: { media: imatges }
+                  - name: alt
+                    label: Descripció de la imatge
+                    type: string
+                  - name: enllac
+                    label: Enllaç en clicar la imatge (opcional)
+                    type: string
+                  - name: text
+                    label: Text
+                    component: text_ric
+                  - name: descarrega
+                    label: Fitxer per descarregar (opcional)
+                    description: Si s'omple, sota el text apareix un botó de descàrrega.
+                    type: string
+
+          - name: videos
+            label: Vídeos de YouTube
+            fields:
+              - name: videos
+                label: Vídeos
+                type: object
+                list:
+                  collapsible: { collapsed: true, summary: "Vídeo {index}: {youtube}" }
+                fields:
+                  - name: youtube
+                    label: Codi del vídeo de YouTube
+                    description: "Les lletres que hi ha darrere de 'watch?v=' a l'adreça del vídeo. Per exemple, de https://www.youtube.com/watch?v=OAmx-ImNqco cal posar OAmx-ImNqco"
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text que acompanya el vídeo
+                    component: text_ric
+
+          - name: descarregues
+            label: Descàrregues
+            fields:
+              - name: carpeta_drive
+                label: Enllaç a la carpeta completa de Google Drive (opcional)
+                type: string
+              - name: fitxers
+                label: Fitxers
+                type: object
+                list:
+                  collapsible: { collapsed: true, summary: "{nom}" }
+                fields:
+                  - name: nom
+                    label: Nom que es mostra (amb l'extensió, p. ex. Plafó.pdf)
+                    type: string
+                  - name: url
+                    label: Enllaç de descàrrega
+                    description: Enllaç de Dropbox o Google Drive. Si és una carpeta amb diversos fitxers, deixeu-ho buit i ompliu «Fitxers de la carpeta».
+                    type: string
+                  - name: miniatura
+                    label: Miniatura de la primera pàgina (opcional)
+                    description: Si tots els fitxers del bloc en tenen, es mostren com a targetes amb imatge.
+                    type: image
+                    options: { media: imatges, path: assets/img/miniatures }
+                  - name: carpeta
+                    label: Fitxers de la carpeta
+                    type: object
+                    list:
+                      collapsible: { collapsed: true, summary: "{nom}" }
+                    fields:
+                      - name: nom
+                        label: Nom
+                        type: string
+                      - name: url
+                        label: Enllaç de descàrrega
+                        type: string
+                      - name: carpeta
+                        label: Subcarpeta
+                        type: object
+                        list:
+                          collapsible: { collapsed: true, summary: "{nom}" }
+                        fields:
+                          - name: nom
+                            label: Nom
+                            type: string
+                          - name: url
+                            label: Enllaç de descàrrega
+                            type: string
+
+          - name: persones
+            label: Persones (targetes de l'Equip)
+            fields:
+              - name: titol
+                label: Títol del grup (opcional)
+                type: string
+              - name: persones
+                label: Persones
+                type: object
+                list:
+                  collapsible: { collapsed: true, summary: "{nom}" }
+                fields:
+                  - name: nom
+                    label: Nom i cognoms
+                    type: string
+                  - name: text
+                    label: Descripció
+                    type: text
+
+          - name: nota
+            label: Nota destacada amb icona
+            fields:
+              - name: imatge
+                label: Icona
+                type: image
+                options: { media: imatges }
+              - name: alt
+                label: Descripció de la icona
+                type: string
+              - name: text
+                label: Text
+                component: text_ric
+
+          - name: mapa
+            label: Mapa de Google Maps
+            fields:
+              - name: url
+                label: Adreça d'inserció del mapa
+                description: A Google Maps, Comparteix → Insereix un mapa → copieu només l'adreça que hi ha dins de src="…".
+                type: string
+              - name: titol
+                label: Descripció del mapa (per a persones cegues)
+                type: string
+              - name: enllac
+                label: Enllaç per obrir la ubicació a Google Maps
+                type: string
+
+          - name: serveis
+            label: Targetes de contacte dels serveis
+            fields:
+              - name: serveis
+                label: Serveis
+                type: object
+                list:
+                  collapsible: { collapsed: true, summary: "{nom}" }
+                fields:
+                  - name: nom
+                    label: Nom del servei
+                    type: string
+                  - name: departament
+                    label: Departament
+                    type: string
+                  - name: adreca
+                    label: Adreça
+                    type: text
+                  - name: telefons
+                    label: Telèfons
+                    type: object
+                    list: true
+                    fields:
+                      - name: text
+                        label: Telèfon tal com es mostra (p. ex. 638 767 515)
+                        type: string
+                      - name: tel
+                        label: Telèfon sense espais (per trucar des del mòbil)
+                        type: string
+                      - name: nota
+                        label: Nota (opcional, p. ex. també WhatsApp)
+                        type: string
+                  - name: correu
+                    label: Correu electrònic
+                    type: string
+                  - name: url
+                    label: Pàgina de la fitxa del servei
+                    type: string
+
+  # ---------------------------------------------------------------
   - name: menu
     label: Menú del web
     description: Seccions i subpàgines del menú. Quan creeu una pàgina nova, afegiu-la aquí perquè aparegui al menú.
@@ -343,6 +959,12 @@ content:
         fields:
           - name: titol
             label: Nom de la secció
+            type: string
+          - name: titol_es
+            label: Nom de la secció en castellà
+            type: string
+          - name: titol_en
+            label: Nom de la secció en anglès
             type: string
           - name: url
             label: Adreça (p. ex. /equip)
@@ -371,6 +993,12 @@ content:
               - name: titol
                 label: Nom
                 type: string
+              - name: titol_es
+                label: Nom en castellà
+                type: string
+              - name: titol_en
+                label: Nom en anglès
+                type: string
               - name: url
                 label: Adreça
                 type: string
@@ -381,6 +1009,12 @@ content:
                 fields:
                   - name: titol
                     label: Nom
+                    type: string
+                  - name: titol_es
+                    label: Nom en castellà
+                    type: string
+                  - name: titol_en
+                    label: Nom en anglès
                     type: string
                   - name: url
                     label: Adreça
@@ -404,8 +1038,8 @@ content:
         type: image
         options: { media: imatges }
       - name: peu
-        label: Nom al peu de pàgina
         type: string
+        hidden: true
       - name: correus
         label: Correus electrònics del peu
         type: string
@@ -437,6 +1071,217 @@ content:
           - name: titol
             label: Text
             type: string
+          - name: titol_es
+            label: Text en castellà
+            type: string
+          - name: titol_en
+            label: Text en anglès
+            type: string
           - name: url
             label: Adreça
             type: string
+
+  # ---------------------------------------------------------------
+  - name: textos
+    label: Textos de la interfície (tres idiomes)
+    description: Textos fixos del web (capçalera, peu, botons) en català, castellà i anglès.
+    type: file
+    path: data/textos.yaml
+    format: yaml
+    fields:
+      - name: nom_unitat
+        label: "Nom de la unitat (capçalera)"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: peu_nom
+        label: "Nom al peu de pàgina"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: servei_extern
+        label: "Frase del peu sota el nom"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: descripcio
+        label: "Descripció per als cercadors"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: salta
+        label: "Enllaç «Salta al contingut» (lectors de pantalla)"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: menu
+        label: "Botó del menú"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: menu_principal
+        label: "Nom del menú principal (lectors de pantalla)"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: accessos_rapids
+        label: "Nom dels enllaços de la capçalera (lectors de pantalla)"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: idioma
+        label: "Nom del selector d'idioma (lectors de pantalla)"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: seccions
+        label: "Nom de la llista de seccions del peu"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: sou_aqui
+        label: "Nom del camí de navegació (lectors de pantalla)"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: inici
+        label: "Primer element del camí de navegació"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: que_hi_trobareu
+        label: "Títol de les seccions a la pàgina d'inici"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: canal_telegram
+        label: "Nom de l'avís de Telegram (lectors de pantalla)"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: sense_traduccio
+        label: "Avís de pàgina encara no traduïda"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: descarrega_html
+        label: "Botó de descàrrega dels jocs"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: fitxers
+        label: "Paraula «fitxers» (comptador de carpeta)"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: fitxer
+        label: "Tipus de fitxer quan no té extensió"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: carpeta_drive
+        label: "Enllaç a la carpeta de Google Drive"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: reprodueix_video
+        label: "Botó de reproduir vídeo (lectors de pantalla)"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: video_youtube
+        label: "Text del vídeo a la versió de prova"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: telefon
+        label: "Paraula «Telèfon»"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: correu
+        label: "Paraula «Correu»"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: com_arribar
+        label: "Enllaç de les targetes de contacte"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: de
+        label: "Preposició «de» (enllaç de contacte)"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: obre_maps
+        label: "Enllaç per obrir Google Maps"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: no_trobada_titol
+        label: "Títol de la pàgina no trobada"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }
+      - name: no_trobada_text
+        label: "Text de la pàgina no trobada"
+        type: object
+        fields:
+          - { name: ca, label: Català, type: string }
+          - { name: es, label: Castellà, type: string }
+          - { name: en, label: Anglès, type: string }

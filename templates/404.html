@@ -1,8 +1,12 @@
 {% extends "base.html" %}
-{% block title %}Pàgina no trobada · UTAC{% endblock %}
+{% block title %}{{ T.no_trobada_titol }} · UTAC{% endblock %}
 {% block main %}
 <div class="pagina"><article class="cos">
-<h1>No hem trobat aquesta pàgina</h1>
-<p>Potser l'adreça ha canviat. Podeu tornar a l'<a href="{{ link('/inici') }}">inici</a> o fer servir el menú per trobar la secció que cerqueu.</p>
+{% for l, t in TT.items() %}
+<div lang="{{ l }}"{% if not loop.first %} class="no-trobada-altre"{% endif %}>
+{% if loop.first %}<h1>{{ t.no_trobada_titol }}</h1>{% else %}<h2>{{ t.no_trobada_titol }}</h2>{% endif %}
+<p>{{ t.no_trobada_text }} <a href="{{ link(prefix(l) + '/inici') }}">{{ t.inici }}</a></p>
+</div>
+{% endfor %}
 </article></div>
 {% endblock %}

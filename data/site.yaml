@@ -16,6 +16,10 @@ xarxes:
   icona: x
 accessos_rapids:
 - titol: Contacte
+  titol_es: Contacto
+  titol_en: Contact
   url: /contacte-1
 - titol: Descàrregues
+  titol_es: Descargas
+  titol_en: Downloads
   url: /descarregues
