@@ -10,10 +10,7 @@ blocs:
     ús funcional de les mans. També inclouen altres formes de comunicació basades en els gestos i els signes manuals o en productes de suport de baixa tecnologia com els plafons de comunicació. **Els sistemes d''accés a l''ordinador** inclouen tota mena de perifèrics, programes especials i sistemes de simulació de teclat i de ratolí per a l''accés alternatiu al programari estàndard. Permeten l''ús de l''ordinador a persones amb discapacitat motriu, fins i tot en casos d''extrema gravetat, amb l’objectiu que puguin realitzar funcions com l''escriptura, el dibuix, el joc, la formació o el treball. També fan possible l''accés a les xarxes d''informació per a la consulta i la comunicació a distància.
 
 
-    **El joc adaptat i els sistemes de control de l’entorn** permeten a la persona amb mobilitat i manipulació reduïda la participació en activitats lúdiques i domèstiques, com ara l’activació de joguines, el control d’alarmes i elements de la llar com el llit, finestres i portes, la gestió del televisor i altres electrodomèstics, etc.
-
-
-    **La mobilitat assistida** consisteix en l’ús de diversos ajuts per al desplaçament, incloent el comandament de cadires de rodes amb joysticks adaptats a la mà, el peu o el mentó, o amb sistemes d’un o diversos commutadors.'
+    **El joc adaptat i els sistemes de control de l’entorn** permeten a la persona amb mobilitat i manipulació reduïda la participació en activitats lúdiques i domèstiques, com ara l’activació de joguines, el control d’alarmes i elements de la llar com el llit, finestres i portes, la gestió del televisor i altres electrodomèstics, etc.'
 - tipus: imatge
   imatge: inici--informacio-01.webp
   alt: Alumne assenyalant en un plafó pictogràfic
