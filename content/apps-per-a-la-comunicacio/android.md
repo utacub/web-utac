@@ -22,8 +22,8 @@ blocs:
   format: icones
   fitxes:
   - imatge: apps-per-a-la-comunicacio--android-04.webp
-    alt: Icona de l'aplicació Asistente de voz AAC
-    text: 'Asistente de voz AAC'
+    alt: Icona de l'aplicació Assistent de veu AAC
+    text: '[Assistent de veu AAC](https://play.google.com/store/apps/details?id=nl.asoft.speechassistant&hl=ca)'
   - imatge: apps-per-a-la-comunicacio--android-06.webp
     alt: Icona de l'aplicació MessageTTS
     text: '[MessageTTS](https://play.google.com/store/apps/details?id=com.uvigo.gti.MessageTTS)'
