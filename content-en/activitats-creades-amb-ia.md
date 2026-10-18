@@ -8,7 +8,7 @@ blocs:
   format: captures
   fitxes:
   - imatge: activitats-ia--miraijuga.gif
-    alt: 'Mira i Juga screens: painting with the eyes, duck fishing, wheelchair basketball, making a pizza, the farm, space, the xylophone and fireworks'
+    alt: 'Mira i Juga screens: painting with the eyes, duck fishing, the Ferris wheel, the drum kit, making a pizza, football, the farm and fireworks'
     enllac: https://utacub.github.io/miraijuga/
     text: '**[Mira i Juga](https://utacub.github.io/miraijuga/)**: animated scenes for learning to control the computer with the eyes.'
     descarrega: /assets/jocs/miraijuga.html
