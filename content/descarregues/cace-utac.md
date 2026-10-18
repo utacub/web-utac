@@ -12,6 +12,12 @@ blocs:
     Per aclarir qualsevol dubte que tingueu respecte a com s''instal·len o utilitzen els arxius que trobareu en aquesta pàgina podeu escriure un correu electrònic a [utac@ub.edu](mailto:utac@ub.edu) o bé [utac.sirius.dretssocials@gencat.cat](mailto:utac.sirius.dretssocials@gencat.cat).
 
 
+    ## Google Docs
+
+
+    - [CACE 2021 Català 4x5. Versió 210218. 20 Categories](https://docs.google.com/document/d/12yR9RXCVzBfio-vsSbIU38RYeZkcWZp1lEUh793Fb6E/edit?usp=sharing) - Darrera versió revisada, lèxic i categories coincidents amb la versió CACE 2021 per Grid. Pictogrames ARASAAC.
+
+
     ## Microsoft Word
 
 

@@ -12,6 +12,12 @@ blocs:
     If you have any questions about how to install or use the files on this page, you can email [utac@ub.edu](mailto:utac@ub.edu) or [utac.sirius.dretssocials@gencat.cat](mailto:utac.sirius.dretssocials@gencat.cat).
 
 
+    ## Google Docs
+
+
+    - [CACE 2021 Català 4x5. Versió 210218. 20 Categories](https://docs.google.com/document/d/12yR9RXCVzBfio-vsSbIU38RYeZkcWZp1lEUh793Fb6E/edit?usp=sharing) - Latest revised version; words and categories match the CACE 2021 version for Grid. ARASAAC symbols.
+
+
     ## Microsoft Word
 
 
