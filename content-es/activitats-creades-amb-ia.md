@@ -8,7 +8,7 @@ blocs:
   format: captures
   fitxes:
   - imatge: activitats-ia--miraijuga.gif
-    alt: 'Pantallas de Mira i Juga: pintar con la mirada, pesca de patitos, baloncesto en silla de ruedas, hacer una pizza, la granja, el espacio, el xilófono y fuegos artificiales'
+    alt: 'Pantallas de Mira i Juga: pintar con la mirada, pesca de patitos, la noria, la batería, hacer una pizza, fútbol, la granja y fuegos artificiales'
     enllac: https://utacub.github.io/miraijuga/
     text: '**[Mira i Juga](https://utacub.github.io/miraijuga/)**: escenas animadas para aprender a controlar el ordenador con la mirada.'
     descarrega: /assets/jocs/miraijuga.html
