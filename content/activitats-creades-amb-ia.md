@@ -25,13 +25,13 @@ blocs:
   - imatge: activitats-ia--lecaa.gif
     alt: 'Pantalles de LECAA en català: portada, lectura de paraules amb imatges i lletra i so'
     enllac: https://utacub.github.io/lecaa/
-    logo: lecaa-logo.svg
+    logo: LECAA-petroli-transparent-600.png
     logo_alt: LECAA
     text: '**[Lectura i Escriptura per a usuaris de Comunicació Augmentativa i Alternativa (LECAA)](https://utacub.github.io/lecaa/)**'
   - imatge: activitats-ia--lecaa-cast.gif
     alt: 'Pantalles de LECAA Cast en castellà: portada, preparació de la sessió, lletra i so i lectura de paraules amb imatges'
     enllac: https://utacub.github.io/lecaa_cast/
-    logo: lecaa-logo.svg
+    logo: LECAA-petroli-transparent-600.png
     logo_alt: LECAA Cast
     text: '**[Lectura y Escritura para usuarios de Comunicación Aumentativa y Alternativa (LECAA CAST)](https://utacub.github.io/lecaa_cast/)**'
 ---

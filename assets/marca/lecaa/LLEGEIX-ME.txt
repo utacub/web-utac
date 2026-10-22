@@ -1,0 +1,51 @@
+LECAA · PAQUET DE MARCA · VARIANT ORIGINAL
+16 d’octubre de 2026
+
+BASE
+Logotip «LECAA diàleg», opció 10 / variant 01 escollida per Marc Coronas.
+Totes les versions de producció comparteixen els mateixos contorns vectorials.
+El nom ja està inclòs en el signe. Els arxius no requereixen cap font externa.
+
+TRIA RÀPIDA
+Fons blanc o clar: SVG/LECAA-petroli-transparent.svg
+Fons fosc: SVG/LECAA-blanc-transparent.svg
+Monocrom: SVG/LECAA-negre-transparent.svg o LECAA-blanc-transparent.svg
+Documents: PNG/1200 o PNG/2400. Usa PDF/SVG si l’eina admet vectors.
+Web: SVG o WEBP. Impressió: PDF o EPS.
+
+CONTINGUT
+SVG/: 11 versions vectorials, cinc amb fons transparent i sis amb fons fix.
+PNG/: les mateixes versions a 600, 1200 i 2400 píxels d’amplada, amb alfa.
+PDF/: les 11 versions vectorials. El blanc transparent es veu sobre fons fosc.
+EPS/: versions principal i negra, amb contorns.
+WEBP/: les 11 versions sense pèrdua, amb transparència quan correspon.
+JPEG/: les sis versions amb fons fix, a 2400 píxels d’amplada.
+Icones/: el mateix nom complet en format quadrat blanc o petroli.
+PNG de les icones: 32, 48, 64, 128, 180, 192, 256, 512 i 1024 píxels.
+LECAA-favicon.ico: mides 32, 48, 64, 128 i 256.
+LECAA-Guia-de-marca.pdf: guia de tres pàgines amb exemples, colors i usos.
+paleta.json / paleta.css: colors sRGB i contrastos calculats.
+MANIFEST.sha256: empremtes dels arxius inclosos.
+
+TRANSPARÈNCIA
+Els arxius «transparent» tenen el fons i els espais interns transparents.
+La versió blanca pot semblar buida quan el visor té el fons blanc.
+La versió menta està prevista per a fons foscos.
+
+COMPOSICIÓ
+Mantén la proporció i un marge exterior d’una quarta part de l’alçada.
+Tria una de les variants de color incloses segons el fons.
+Els PDF i EPS són vectorials en RGB; l’adaptació al perfil d’impressió es
+pot fer en el procés de producció de la impremta.
+
+ORIGEN
+Desenvolupament de LECAA: UTAC · www.utac.cat.
+Exploració gràfica amb ChatGPT, a partir de la variant escollida.
+Contorns de producció derivats del màster aprovat. Aquest paquet no
+estableix una llicència nova per als materials de l’aplicació.
+
+REUTILITZACIÓ ENTRE PROJECTES
+Originals de la marca: LECAA_Marca_2026-10-16.zip.
+SVG principal: https://www.utac.cat/assets/marca/lecaa/LECAA-petroli-transparent.svg
+PNG principal: https://www.utac.cat/assets/marca/lecaa/LECAA-petroli-transparent-600.png
+Les versions catalana i castellana comparteixen el mateix logotip.
