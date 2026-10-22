@@ -383,3 +383,7 @@ details[open] > summary::after { content: "–"; }
 .persona.servei .servei-dept { font-weight: 700; color: var(--tinta-suau); }
 .servei a { overflow-wrap: anywhere; }
 .persona.servei .servei-acc { margin: auto 0 0; padding-top: .35rem; font-weight: 700; }
+
+/* Logotips de les aplicacions amb captures. */
+.fitxa-logo { display: inline-flex; align-self: flex-start; align-items: center; min-height: 56px; margin-bottom: .25rem; }
+.fitxa-logo img { display: block; width: auto; height: auto; max-width: 160px; max-height: 56px; }
