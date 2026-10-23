@@ -24,3 +24,7 @@ El web es publica en català (www.utac.cat/...), castellà (www.utac.cat/es/...)
 - Els enllaços interns del contingut s'escriuen sempre amb l'adreça catalana (p. ex. `/descarregues`); el generador hi afegeix `/es` o `/en` segons l'idioma de la pàgina.
 - Quan es crea una pàgina catalana nova, fins que no se'n fa la traducció, les versions /es/ i /en/ mostren el text català amb un avís.
 - Per traduir-la des del panell: «Pàgines en castellà» o «Pàgines en anglès», a la mateixa carpeta, i omplir el camp «Pàgina catalana que tradueix» amb l'adreça catalana. Al menú, cal omplir també «Nom en castellà» i «Nom en anglès».
+
+## Criteri obligatori d’edició multilingüe
+
+Tots els canvis del web s’han d’aplicar en català, castellà i anglès en la mateixa actualització. En modificar una pàgina, actualitza les versions de `content/`, `content-es/` i `content-en/`, tradueix els textos i les descripcions alternatives, i mantén equivalents els enllaços, els recursos visuals i el format. Verifica les tres versions publicades. Aquest criteri també s’aplica als textos d’interfície, els menús i les plantilles compartides; evita publicar una versió amb contingut desactualitzat.

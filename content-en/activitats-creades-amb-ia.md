@@ -22,4 +22,16 @@ blocs:
     enllac: https://utacub.github.io/mirastudio/
     text: '**[Mira Studio](https://utacub.github.io/mirastudio/)**: 15 creative activities to play with the eyes, from discovery to planning.'
     descarrega: /assets/jocs/mirastudio.html
+  - imatge: activitats-ia--lecaa.gif
+    alt: 'LECAA screens in Catalan: home screen, word reading with pictures, and letters and sounds'
+    enllac: https://utacub.github.io/lecaa/
+    logo: LECAA-petroli-transparent-600.png
+    logo_alt: LECAA
+    text: '**[Reading and Writing for Users of Augmentative and Alternative Communication (LECAA, in Catalan)](https://utacub.github.io/lecaa/)**'
+  - imatge: activitats-ia--lecaa-cast.gif
+    alt: 'LECAA Cast screens in Spanish: home screen, session setup, letters and sounds, and word reading with pictures'
+    enllac: https://utacub.github.io/lecaa_cast/
+    logo: LECAA-petroli-transparent-600.png
+    logo_alt: LECAA Cast
+    text: '**[Reading and Writing for Users of Augmentative and Alternative Communication (LECAA CAST, in Spanish)](https://utacub.github.io/lecaa_cast/)**'
 ---
