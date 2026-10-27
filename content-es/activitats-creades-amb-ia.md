@@ -40,5 +40,4 @@ blocs:
     logo: LECAA-petroli-transparent-600.png
     logo_alt: LECAA Tecla
     text: '**[LECAA Tecla](https://utacub.github.io/lecaa_tecla/)**: 25 minijuegos para descubrir dónde vive cada letra en el teclado.'
-    descarrega: /assets/jocs/lecaa-tecla.html
 ---
