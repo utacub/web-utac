@@ -137,6 +137,15 @@ menu:
   titol_en: Activities created with AI
   url: /activitats-creades-amb-ia
   icona: joc
+  fills:
+  - titol: Mira
+    titol_es: Mira
+    titol_en: Mira
+    url: /activitats-creades-amb-ia/mira
+  - titol: LECAA
+    titol_es: LECAA
+    titol_en: LECAA
+    url: /activitats-creades-amb-ia/lecaa
 - titol: Productes de suport
   titol_es: Productos de apoyo
   titol_en: Assistive products
