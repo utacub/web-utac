@@ -34,4 +34,11 @@ blocs:
     logo: LECAA-petroli-transparent-600.png
     logo_alt: LECAA Cast
     text: '**[Reading and Writing for Users of Augmentative and Alternative Communication (LECAA CAST, in Spanish)](https://utacub.github.io/lecaa_cast/)**'
+  - imatge: activitats-ia--lecaa-tecla.gif
+    alt: 'LECAA Tecla screens in Catalan: home screen, the island, Alphabet Invaders, Magic Mosaic, The Word Train, Key Concert, Constellations, Letter Penalties and The Dancing Robot'
+    enllac: https://utacub.github.io/lecaa_tecla/
+    logo: LECAA-petroli-transparent-600.png
+    logo_alt: LECAA Tecla
+    text: '**[LECAA Tecla](https://utacub.github.io/lecaa_tecla/)**: 25 mini-games to discover where each letter lives on the keyboard.'
+    descarrega: /assets/jocs/lecaa-tecla.html
 ---
