@@ -47,7 +47,7 @@
   <li class="fitxa">
     {%- set nova = b.format == 'captures' and (f.enllac or '').startswith('http') %}
     <div class="fitxa-img">{% if f.enllac %}<a href="{{ link(f.enllac) }}" tabindex="-1"{% if nova %} target="_blank" rel="noopener"{% endif %}>{% endif %}<img src="{{ img(f.imatge) }}" alt="{{ f.alt }}" loading="lazy">{% if f.enllac %}</a>{% endif %}</div>
-    <div class="fitxa-text">{% if f.logo %}<a class="fitxa-logo" href="{{ link(f.enllac) }}"{% if nova %} target="_blank" rel="noopener"{% endif %}><img src="{{ img(f.logo) }}" alt="{{ f.logo_alt }}" width="120" height="48" style="width:120px;height:48px;object-fit:contain;object-position:left center;display:block" loading="lazy"></a>{% endif %}{% if nova %}{{ md(f.text)|replace('<a href="http', '<a target="_blank" rel="noopener" href="http')|safe }}{% else %}{{ md(f.text)|safe }}{% endif %}{% if f.descarrega %}
+    <div class="fitxa-text">{% if f.logo %}<a class="fitxa-logo" href="{{ link(f.enllac) }}"{% if nova %} target="_blank" rel="noopener"{% endif %}><img src="{{ img(f.logo) }}" alt="{{ f.logo_alt }}" width="120" height="48" style="width:120px;height:48px;object-fit:contain;object-position:left center;display:block" loading="lazy">{% if f.logo_sufix %}<span class="fitxa-logo-sufix" aria-hidden="true">{{ f.logo_sufix }}</span>{% endif %}</a>{% endif %}{% if nova %}{{ md(f.text)|replace('<a href="http', '<a target="_blank" rel="noopener" href="http')|safe }}{% else %}{{ md(f.text)|safe }}{% endif %}{% if f.descarrega %}
       <a class="boto-descarrega" href="{{ link(f.descarrega) }}" download>{{ icon('descarrega') }}<span>{{ T.descarrega_html }}</span></a>{% endif %}</div>
   </li>
   {% endfor %}

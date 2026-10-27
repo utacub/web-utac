@@ -18,6 +18,7 @@ blocs:
     enllac: https://utacub.github.io/lecaa_cast/
     logo: LECAA-petroli-transparent-600.png
     logo_alt: LECAA Cast
+    logo_sufix: CAST
     text: '**[Reading and Writing for Users of Augmentative and Alternative Communication (LECAA CAST, in Spanish)](https://utacub.github.io/lecaa_cast/)**'
   - imatge: activitats-ia--lecaa-tecla.gif
     alt: 'LECAA Tecla screens in Catalan: home screen, the island, Alphabet Invaders, Magic Mosaic, The Word Train, Key Concert, Constellations, Letter Penalties and The Dancing Robot'
