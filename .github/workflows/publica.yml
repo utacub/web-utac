@@ -36,9 +36,6 @@ jobs:
           curl -fsSL https://raw.githubusercontent.com/utacub/miraijuga/main/index.html -o dist/assets/jocs/miraijuga.html
           curl -fsSL https://raw.githubusercontent.com/utacub/miraarcade/main/index.html -o dist/assets/jocs/miraarcade.html
           curl -fsSL https://raw.githubusercontent.com/utacub/mirastudio/main/index.html -o dist/assets/jocs/mirastudio.html
-          # LECAA Tecla no versiona l'HTML: es munta des del codi font
-          git clone --depth 1 https://github.com/utacub/lecaa_tecla.git /tmp/lecaa_tecla
-          python3 /tmp/lecaa_tecla/tools/build.py dist/assets/jocs/lecaa-tecla.html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
