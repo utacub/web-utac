@@ -23,7 +23,7 @@ blocs:
   - imatge: activitats-ia--lecaa-tecla.gif
     alt: 'Pantalles de LECAA Tecla en català: portada, l''illa, invasors de l''alfabet, mosaic màgic, el tren de paraules, concert de tecles, constel·lacions, penals de lletres i el robot ballarí'
     enllac: https://utacub.github.io/lecaa_tecla/
-    logo: LECAA-petroli-transparent-600.png
+    logo: LECAA-Tecla-petroli-transparent.png
     logo_alt: LECAA Tecla
     text: '**[LECAA Tecla](https://utacub.github.io/lecaa_tecla/)**: 25 minijocs per descobrir on viu cada lletra al teclat.'
 ---
