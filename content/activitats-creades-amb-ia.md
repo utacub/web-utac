@@ -8,9 +8,11 @@ blocs:
   format: captures
   fitxes:
   - imatge: activitats-ia--miraijuga.gif
-    alt: 'Pantalles de Mira i Juga: pintar amb la mirada, pesca d''aneguets, la sínia, la bateria, fer una pizza, futbol, la granja i focs artificials'
+    alt: 'Pantalles de Mira Juga: portada, pintar amb la mirada, pesca d''aneguets, la sínia, la bateria, fer una pizza, futbol, la granja i focs artificials'
     enllac: /activitats-creades-amb-ia/mira
-    text: '**[Mira](/activitats-creades-amb-ia/mira)**: jocs per aprendre i practicar el control de l''ordinador amb la mirada (Mira i Juga, Mira Arcade i Mira Studio).'
+    logo: Mira-color-transparent.png
+    logo_alt: Mira
+    text: '**[Mira](/activitats-creades-amb-ia/mira)**: jocs per aprendre i practicar el control de l''ordinador amb la mirada (Mira Juga, Mira Arcade i Mira Studio).'
   - imatge: activitats-ia--lecaa.gif
     alt: 'Pantalles de LECAA en català: portada, lectura de paraules amb imatges i lletra i so'
     enllac: /activitats-creades-amb-ia/lecaa
