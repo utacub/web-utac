@@ -387,4 +387,4 @@ details[open] > summary::after { content: "–"; }
 /* Logotips de les aplicacions amb captures. */
 .fitxa-logo { display: inline-flex; text-decoration: none; align-self: flex-start; align-items: center; min-height: 56px; margin-bottom: .25rem; }
 .fitxa-logo img { display: block; width: auto; height: auto; max-width: 160px; max-height: 56px; }
-.fitxa-logo-sufix { margin-left: -.25rem; font-weight: 800; font-size: .95rem; letter-spacing: .08em; color: #17676b; }
+.fitxa-logo-sufix { margin-left: .7rem; font-weight: 800; font-size: .95rem; letter-spacing: .08em; color: #17676b; }
