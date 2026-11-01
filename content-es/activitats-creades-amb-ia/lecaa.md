@@ -26,4 +26,10 @@ blocs:
     logo: LECAA-Tecla-petroli-transparent.png
     logo_alt: LECAA Tecla
     text: '**[LECAA Tecla](https://utacub.github.io/lecaa_tecla/)**: 25 minijuegos para descubrir dónde vive cada letra en el teclado.'
+  - imatge: activitats-ia--lecaa-docs.gif
+    alt: 'Pantallas de LECAA Docs en catalán: escritura con pictogramas ARASAAC encima de las palabras, lectura en voz alta, deletrear una palabra, elegir otro pictograma, letra ligada, configuración del feedback, mis documentos y sobre LECAA Docs'
+    enllac: https://utacub.github.io/lecaa_docs/
+    logo: LECAA-Docs-petroli-transparent.png
+    logo_alt: LECAA Docs
+    text: '**[LECAA Docs](https://utacub.github.io/lecaa_docs/)**: procesador de textos sencillo con texto a voz y pictogramas ARASAAC para aprender a escribir.'
 ---
