@@ -132,9 +132,9 @@ menu:
     titol_es: Android
     titol_en: Android
     url: /apps-per-a-la-comunicacio/android
-- titol: Activitats creades amb IA
-  titol_es: Actividades creadas con IA
-  titol_en: Activities created with AI
+- titol: Programari creat amb IA
+  titol_es: Software creado con IA
+  titol_en: Software created with AI
   url: /activitats-creades-amb-ia
   icona: joc
   fills:

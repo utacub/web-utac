@@ -1,9 +1,9 @@
 ---
-titol: Activities created with AI
+titol: Software created with AI
 ordre: 30
 blocs:
 - tipus: text
-  text: Activities created with artificial intelligence for playing and learning, grouped into two collections.
+  text: Software created with artificial intelligence for playing and learning, grouped into two collections.
 - tipus: fitxes
   format: captures
   fitxes:

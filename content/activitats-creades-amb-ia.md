@@ -1,9 +1,9 @@
 ---
-titol: Activitats creades amb IA
+titol: Programari creat amb IA
 ordre: 30
 blocs:
 - tipus: text
-  text: Activitats creades amb intel·ligència artificial per jugar i aprendre, agrupades en dues col·leccions.
+  text: Programari creat amb intel·ligència artificial per jugar i aprendre, agrupat en dues col·leccions.
 - tipus: fitxes
   format: captures
   fitxes:

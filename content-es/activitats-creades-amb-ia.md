@@ -1,9 +1,9 @@
 ---
-titol: Actividades creadas con IA
+titol: Software creado con IA
 ordre: 30
 blocs:
 - tipus: text
-  text: Actividades creadas con inteligencia artificial para jugar y aprender, agrupadas en dos colecciones.
+  text: Software creado con inteligencia artificial para jugar y aprender, agrupado en dos colecciones.
 - tipus: fitxes
   format: captures
   fitxes:
