@@ -3,7 +3,7 @@ titol: Programari creat amb IA
 ordre: 30
 blocs:
 - tipus: text
-  text: Programari creat amb intel·ligència artificial per jugar i aprendre, agrupat en dues col·leccions.
+  text: Programari creat amb intel·ligència artificial per comunicar-se, jugar i aprendre.
 - tipus: fitxes
   format: captures
   fitxes:
@@ -17,4 +17,10 @@ blocs:
     logo: LECAA-petroli-transparent-600.png
     logo_alt: LECAA
     text: '**[LECAA](/activitats-creades-amb-ia/lecaa)**: activitats de lectura i escriptura per a usuaris de comunicació augmentativa i alternativa (LECAA, LECAA Cast i LECAA Tecla).'
+  - imatge: activitats-ia--keryx.gif
+    alt: 'Pantalles d''UTAC Keryx en català: escriure un missatge amb predicció de paraules, mostrar el missatge a l''interlocutor, respostes ràpides, carpetes de frases, frases de conversa social, historial, ajustos d''accés i informació'
+    enllac: https://utacub.github.io/keryx/
+    logo: UTAC-Keryx-transparent.png
+    logo_alt: UTAC Keryx
+    text: '**[UTAC Keryx](https://utacub.github.io/keryx/)**: comunicador alfabètic per escriure missatges, llegir-los en veu alta o mostrar-los a l''interlocutor. S''instal·la com a aplicació i funciona sense connexió.'
 ---
