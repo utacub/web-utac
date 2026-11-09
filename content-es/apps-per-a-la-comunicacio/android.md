@@ -21,6 +21,9 @@ blocs:
 - tipus: fitxes
   format: icones
   fitxes:
+  - imatge: apps-per-a-la-comunicacio--keryx.webp
+    alt: Icono de la aplicación UTAC Keryx
+    text: '[UTAC Keryx](https://utacub.github.io/keryx/): comunicador alfabético gratuito que se instala desde el navegador y funciona sin conexión.'
   - imatge: apps-per-a-la-comunicacio--android-04.webp
     alt: Icono de la aplicación Asistente de voz AAC
     text: '[Asistente de voz AAC](https://play.google.com/store/apps/details?id=nl.asoft.speechassistant&hl=es)'
