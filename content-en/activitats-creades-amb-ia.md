@@ -23,4 +23,10 @@ blocs:
     logo: UTAC-Keryx-transparent.png
     logo_alt: UTAC Keryx
     text: '**[UTAC Keryx](https://utacub.github.io/keryx/)**: alphabet-based communicator for writing messages, reading them aloud or showing them to the other person. It installs as an app and works offline.'
+  - imatge: activitats-ia--pimpam.gif
+    alt: 'Pim Pam screens: the home page and scenes from Rainforest of light, Let’s build castells, Glass seabed, Fractals in nature, Paper savanna, The well of time, A bite in Barcelona and Communicating everywhere, always'
+    enllac: https://utacub.github.io/pimpam/
+    logo: Pim-Pam-transparent.png
+    logo_alt: Pim Pam
+    text: '**[Pim Pam](https://utacub.github.io/pimpam/)**: cause-and-effect and scanning activities for learning to use one or two switches: every press gets a clear visual and sound response. It includes short films and lets you create activities with your own photos, videos and sounds. It can be played online or installed as an app, and works offline.'
 ---
