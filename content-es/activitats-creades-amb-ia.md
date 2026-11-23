@@ -10,7 +10,7 @@ blocs:
   - imatge: activitats-ia--miraijuga.gif
     alt: 'Pantallas de Mira i Juga: pintar con la mirada, pesca de patitos, la noria, la batería, hacer una pizza, fútbol, la granja y fuegos artificiales'
     enllac: /activitats-creades-amb-ia/mira
-    text: '**[Mira](/activitats-creades-amb-ia/mira)**: juegos para aprender y practicar el control del ordenador con la mirada (Mira i Juga, Mira Arcade y Mira Studio).'
+    text: '**[Mira](/activitats-creades-amb-ia/mira)**: juegos para aprender y practicar el control del ordenador con la mirada (Mira i Juga, Mira i Juga 2, Mira Arcade y Mira Studio).'
   - imatge: activitats-ia--lecaa.gif
     alt: 'Pantallas de LECAA en catalán: portada, lectura de palabras con imágenes y letra y sonido'
     enllac: /activitats-creades-amb-ia/lecaa

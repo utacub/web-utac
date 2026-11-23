@@ -11,6 +11,10 @@ blocs:
     alt: 'Mira i Juga screens: painting with the eyes, duck fishing, the Ferris wheel, the drum kit, making a pizza, football, the farm and fireworks'
     enllac: https://utacub.github.io/miraijuga/
     text: '**[Mira i Juga](https://utacub.github.io/miraijuga/)**: animated scenes for learning to control the computer with the eyes.'
+  - imatge: activitats-ia--miraijuga2.gif
+    alt: 'Mira i Juga 2 screens: the home page, the menu with 15 scenes and the characters of the hide-and-seek forest, dinosaur eggs, the butterfly garden, what''s the weather like?, the car wash, the robot workshop and pairs at the farmhouse'
+    enllac: https://utacub.github.io/miraijuga2/
+    text: '**[Mira i Juga 2](https://utacub.github.io/miraijuga2/)**: fifteen animated scenes for young children to learn to control the computer with the eyes. It can be played online or installed as an app and works offline.'
   - imatge: activitats-ia--miraarcade.gif
     alt: 'Mira Arcade screens: menu with 15 games, graffiti wall, penalty kick, brick breaker, colour burst, neon bubbles and road trip'
     enllac: https://utacub.github.io/miraarcade/
