@@ -10,7 +10,7 @@ blocs:
   - imatge: activitats-ia--miraijuga.gif
     alt: 'Mira i Juga screens: painting with the eyes, duck fishing, the Ferris wheel, the drum kit, making a pizza, football, the farm and fireworks'
     enllac: /activitats-creades-amb-ia/mira
-    text: '**[Mira](/activitats-creades-amb-ia/mira)**: games for learning and practising computer control with the eyes (Mira i Juga, Mira Arcade and Mira Studio).'
+    text: '**[Mira](/activitats-creades-amb-ia/mira)**: games for learning and practising computer control with the eyes (Mira i Juga, Mira i Juga 2, Mira Arcade and Mira Studio).'
   - imatge: activitats-ia--lecaa.gif
     alt: 'LECAA screens in Catalan: home screen, word reading with pictures, and letters and sounds'
     enllac: /activitats-creades-amb-ia/lecaa

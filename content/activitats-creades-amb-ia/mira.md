@@ -11,6 +11,10 @@ blocs:
     alt: 'Pantalles de Mira i Juga: pintar amb la mirada, pesca d''aneguets, la sínia, la bateria, fer una pizza, futbol, la granja i focs artificials'
     enllac: https://utacub.github.io/miraijuga/
     text: '**[Mira i Juga](https://utacub.github.io/miraijuga/)**: escenes animades per aprendre a controlar l''ordinador amb la mirada.'
+  - imatge: activitats-ia--miraijuga2.gif
+    alt: 'Pantalles de Mira i Juga 2: la portada, el menú amb 15 escenaris i els personatges del bosc dels amagatalls, ous de dinosaure, el jardí de les papallones, quin temps fa?, el rentador de cotxes, el taller de robots i parelles a la masia'
+    enllac: https://utacub.github.io/miraijuga2/
+    text: '**[Mira i Juga 2](https://utacub.github.io/miraijuga2/)**: quinze escenaris animats perquè infants petits aprenguin a controlar l''ordinador amb la mirada. Es pot jugar en línia o instal·lar com a aplicació i funciona sense connexió.'
   - imatge: activitats-ia--miraarcade.gif
     alt: 'Pantalles de Mira Arcade: menú amb 15 jocs, mur de grafit, penal, trenca-maons, esclata colors, bombolles neó i road trip'
     enllac: https://utacub.github.io/miraarcade/
