@@ -29,4 +29,10 @@ blocs:
     logo: Pim-Pam-transparent.png
     logo_alt: Pim Pam
     text: '**[Pim Pam](https://utacub.github.io/pimpam/)**: actividades de causa-efecto y de barrido para aprender a usar uno o dos conmutadores: cada pulsación tiene una respuesta clara, visual y sonora. Incluye pequeñas películas y permite crear actividades con fotos, vídeos y sonidos propios. Se puede jugar en línea o instalar como aplicación y funciona sin conexión.'
+  - imatge: activitats-ia--cace-imatges.gif
+    alt: 'Pantallas de CACE Imatges: la biblioteca de imágenes y ejemplos de distintos niveles: un plato, un pueblo, un león cocinando, una mujer comprando pan, un cojín sobre un sofá, un niño que guarda construcciones en una caja, una ardilla que se mancha con chocolate y un parque con un tobogán'
+    enllac: https://utacub.github.io/cace_imgs/
+    logo: CACE-Imatges-transparent.png
+    logo_alt: CACE Imatges
+    text: '**[CACE Imatges](https://utacub.github.io/cace_imgs/)**: biblioteca de fotografías y dibujos para trabajar el vocabulario CACE, con más de 4.800 imágenes organizadas en 13 niveles, desde palabras individuales hasta escenas completas. Permite buscar en catalán y castellano, filtrar por categoría y por nivel, crear colecciones y añadir imágenes propias. Se instala como aplicación y funciona sin conexión.'
 ---

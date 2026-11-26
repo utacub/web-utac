@@ -29,4 +29,10 @@ blocs:
     logo: Pim-Pam-transparent.png
     logo_alt: Pim Pam
     text: '**[Pim Pam](https://utacub.github.io/pimpam/)**: cause-and-effect and scanning activities for learning to use one or two switches: every press gets a clear visual and sound response. It includes short films and lets you create activities with your own photos, videos and sounds. It can be played online or installed as an app, and works offline.'
+  - imatge: activitats-ia--cace-imatges.gif
+    alt: 'CACE Imatges screens: the image library and examples from different levels: a plate, a village, a lion cooking, a woman buying bread, a cushion on a sofa, a boy putting building blocks away in a box, a squirrel getting chocolate on itself and a playground with a slide'
+    enllac: https://utacub.github.io/cace_imgs/
+    logo: CACE-Imatges-transparent.png
+    logo_alt: CACE Imatges
+    text: '**[CACE Imatges](https://utacub.github.io/cace_imgs/)**: a library of photos and drawings for working on CACE vocabulary, with more than 4,800 images organised into 13 levels, from single words to complete scenes. You can search in Catalan and Spanish, filter by category and level, build collections and add your own images. It can be installed as an app and works offline.'
 ---
